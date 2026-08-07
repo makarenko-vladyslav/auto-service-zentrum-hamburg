@@ -1,0 +1,23 @@
+{
+  "currency": "EUR",
+  "rates": {
+    "hourlyRate": 89,
+    "expressDiagnostic": 49,
+    "inspektionBase": 149,
+    "3dAchsvermessung": 89,
+    "klimawartung": 79,
+    "huAuService": 139,
+    "detailingBase": 129,
+    "smartRepairBase": 99,
+    "oilExpress": 59
+  },
+  "options": [
+    { "id": "inspektion", "name": "Планове ТО за регламентом (Inspektion)", "base": 149 },
+    { "id": "achsvermessung", "name": "3D Лазерне регулювання розвалу-сходження", "base": 89 },
+    { "id": "hu_au", "name": "Підготовка та проходження техогляду (HU/AU)", "base": 139 },
+    { "id": "klima", "name": "Обслуговування та заправка кондиціонера", "base": 79 },
+    { "id": "oil", "name": "Експрес-заміна оливи та фільтрів", "base": 59 },
+    { "id": "detailing", "name": "Глибинна чистка салону та озонування", "base": 129 },
+    { "id": "smart_repair", "name": "Усунення вм'ятин / Smart Repair", "base": 99 }
+  ]
+}
