@@ -1,537 +1,355 @@
-
 {
   "defaultLocale": "uk",
   "locales": {
     "uk": {
       "meta": {
-        "title": "Auto Service Zentrum Hamburg — Німецький KFZ-Meisterbetrieb",
-        "description": "Сертифікований автомайстер у Гамбурзі. 3D розвал-сходження, техогляд HU/AU, комп'ютерна діагностика та деталінг. Прямий зв'язок через WhatsApp.",
+        "title": "Auto Service Zentrum Hamburg — Сертифікована автомайстерня KFZ-Meister у Гамбурзі",
+        "description": "Офіційний KFZ-Meisterbetrieb у Гамбурзі. Комп'ютерна діагностика від 49€, 3D-розвал-сходження, техогляд HU/AU, ремонт будь-яких марок та автодеталінг під керівництвом пана Навабі.",
         "lang": "uk"
       },
       "nav": {
         "services": "Послуги та ціни",
-        "meister": "KFZ-Meister",
-        "diagnostics": "3D Стенд",
-        "calculator": "Калькулятор",
-        "beforeAfter": "Деталінг",
+        "calculator": "Калькулятор робіт",
+        "tech": "3D-Обладнання",
+        "about": "Про майстерню",
+        "gallery": "Наші роботи",
         "reviews": "Відгуки",
+        "faq": "Часті питання",
         "contact": "Контакти",
-        "bookCta": "Запис у WhatsApp"
+        "whatsapp": "Написати в WhatsApp",
+        "bookCall": "Записатися"
       },
       "hero": {
-        "kicker": "Est. 2014 · Kieler Str. 207, Hamburg · Сертифікований KFZ-Meisterbetrieb",
-        "titleMain": "НІМЕЦЬКА ТОЧНІСТЬ ТА СЕРТИФІКОВАНИЙ СЕРВІС ВІД",
-        "titleSub": "Обслуговування та ремонт усіх марок за регламентом автовиробників зі збереженням заводської гарантії.",
+        "kicker": "Est. 2018 — HAMBURG · KIELER STR. 207 · KFZ-MEISTERBETRIEB",
+        "h1Prefix": "Німецька діагностика та",
+        "h1Accent": "3D-налаштування",
+        "h1Suffix": "авто всіх марок у Гамбурзі",
+        "lead": "Збереження заводської гарантії за стандартом ЄС GVO 461/2010. Лазерний 3D-стенд розвалу-сходження, регламентне ТО та хімчистка під контролем KFZ-Meister пана Навабі.",
         "ctaPrimary": "Отримати кошторис у WhatsApp",
-        "ctaSecondary": "Розрахувати вартість",
-        "addressBadge": "Kieler Straße 207, 22525 Hamburg",
-        "ratingText": "Google Rating 4.8 / 5.0 · 340+ відгуків",
-        "masterName": "Пан Навабі · Головний KFZ-Meister",
-        "hoursText": "Пн-Пт 08:30-18:00 · Сб за записом",
-        "leftMiniCopy": "Офіційне внесення робіт у цифрову сервісну книжку автовиробника.",
-        "rightMiniCopy": "Прямий нагляд сертифікованого німецького автомайстра пана Навабі.",
-        "heroVideo": "https://videos.pexels.com/video-files/18101981/18101981-hd_1280_720_30fps.mp4",
-        "heroVideoPoster": "https://images.pexels.com/videos/18101981/pexels-photo-18101981.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-      },
-      "stats": [
-        { "value": "100%", "label": "Збереження гарантії виробника" },
-        { "value": "3D Laser", "label": "Точна калібрувальна матриця" },
-        { "value": "4.8 / 5.0", "label": "Офіційний рейтинг Google Maps" },
-        { "value": "від 49 €", "label": "Експрес-діагностика вузлів" }
-      ],
-      "meister": {
-        "kicker": "ПЕРСОНАЛЬНА ВІДПОВІДАЛЬНІСТЬ СЕРТИФІКОВАНОГО МАЙСТРА",
-        "title": "ЧОМУ АВТОВЛАСНИКИ ГАМБУРГА ОБИРАЮТЬ НАШ MEISTERBETRIEB",
-        "quote": "«У нашому сервісі кожен автомобіль проходить особистий контроль якості. Ми надаємо офіційний сервіс рівня дилера, але без нав'язаних додаткових робіт та з прямим узгодженням кошторису.»",
-        "author": "Пан Навабі",
-        "role": "Засновник та головний німецький KFZ-Meister",
-        "points": [
-          "Офіційна акредитація KFZ-Meisterbetrieb з внесенням робіт у електронну сервісну книжку",
-          "Пряме узгодження ремонтного кошторису через WhatsApp — без непередбачених витрат у рахунку",
-          "Власний підрозділ автодеталінгу з професійним озонуванням для повного видалення запахів",
-          "Сертифікований партнер reifen.com з гарантією на шиномонтажні та балансувальні роботи"
+        "ctaSecondary": "Розрахувати вартість робіт",
+        "badge": "Рейтинг Google 4.8 / 5.0 · Понад 340 відгуків автовласників",
+        "videoSrc": "https://videos.pexels.com/video-files/18101981/18101981-hd_1280_720_30fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/18101981/pexels-photo-18101981.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "metaStrip": [
+          "Пн – Пт: 08:00 – 18:00",
+          "Kieler Straße 207, 22525 Hamburg",
+          "4.8 / 5.0 Google Maps (340+ відгуків)"
+        ],
+        "flankLeftTitle": "Прямий контроль",
+        "flankLeftText": "Усі роботи веде та контролює особисто KFZ-Meister Herr Nawabi.",
+        "flankRightTitle": "Локація Eimsbüttel",
+        "flankRightText": "Зручний доїзд з районів Altona, Stellingen, Eidelstedt та Lokstedt.",
+        "metrics": [
+          { "value": "49 €", "label": "Експрес 3D-діагностика" },
+          { "value": "89 €/год", "label": "Фіксована норма-година" },
+          { "value": "100%", "label": "Збереження гарантії заводу" },
+          { "value": "0.01°", "label": "Точність 3D Laser стенду" }
         ]
       },
-      "services": {
-        "kicker": "ПОВНИЙ СПЕКТР АВТОМОБІЛЬНИХ ПОСЛУГ У ГАМБУРЗІ",
-        "title": "ПРЕЙСКУРАНТ ПОСЛУГ ТА РЕГЛАМЕНТНИХ РОБІТ",
-        "subtitle": "Нормо-година від 89 € без ПДВ. Обладнання дилерського рівня та оригінальні комплектуючі.",
-        "categories": ["Всі послуги", "Регламентне ТО", "3D Геометрія", "Кузов & Деталінг"],
+      "ticker": [
+        "Офіційний KFZ-Meisterbetrieb",
+        "Партнер reifen.com",
+        "3D Achsvermessung Laser",
+        "Професійне озонування салону",
+        "HU / AU Service TÜV",
+        "Прямий зв'язок з паном Навабі",
+        "Kieler Straße 207, 22525 Hamburg"
+      ],
+      "servicesSection": {
+        "kicker": "ПРЕЙСКУРАНТ ТА РЕГЛАМЕНТНІ РОБОТИ",
+        "h2": "Професійне обслуговування за технологічними картами автовиробників",
+        "sub": "Фіксовані розцінки, оригінальні комплектуючі OEM та протокол перевірки після кожного етапу робіт.",
+        "categories": ["Усі послуги", "Техобслуговування", "Підвіска & 3D", "Деталінг & Клімат"],
         "items": [
           {
             "id": "inspektion",
-            "category": "Регламентне ТО",
-            "title": "Планове ТО за регламентом (Inspektion)",
-            "desc": "Перевірка вузлів, заміна рідин та фільтрів за специфікацією виробника зі збереженням гарантії.",
-            "price": "від 149 €",
-            "tag": "Гарантія збережена",
-            "img": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg"
+            "category": "Техобслуговування",
+            "title": "Планове ТО (Inspektion за нормативами OEM)",
+            "price": "129 €",
+            "unit": "від",
+            "desc": "Обслуговування за регламентом заводу із внесенням даних у цифрову сервісну книжку. Збереження гарантії ЄС.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg",
+            "tag": "Популярне",
+            "bullets": ["Перевірка 42 контрольних точок", "Заміна оливи та фільтрів OEM", "Комп'ютерне скидання сервісу"]
           },
           {
             "id": "achsvermessung",
-            "category": "3D Геометрія",
-            "title": "3D Лазерний розвал-сходження (Achsvermessung)",
-            "desc": "Високоточна регулювання геометрії підвіски на 3D-лазерному стенді для стабільної керованості.",
-            "price": "від 89 €",
-            "tag": "3D Laser Tech",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg"
+            "category": "Підвіска & 3D",
+            "title": "3D Розвал-сходження (Achsvermessung Laser)",
+            "price": "89 €",
+            "unit": "від",
+            "desc": "Високоточне лазерне вимірювання та регулювання кутів підвіски на стенді 3D Laser.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg",
+            "tag": "Точність 0.01°",
+            "bullets": ["Лазерний вимір 4 коліс", "Усунення зносу шин", "Протокол до та після"]
           },
           {
             "id": "hu_au",
-            "category": "Регламентне ТО",
-            "title": "Офіційний техогляд (HU & AU Service)",
-            "desc": "Попередня діагностика та офіційне проходження техогляду й вимірювання вихлопних газів TÜV/DEKRA.",
-            "price": "від 139 €",
-            "tag": "Офіційний сертифікат",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
+            "category": "Техобслуговування",
+            "title": "Офіційний техогляд HU & AU (TÜV / DEKRA)",
+            "price": "145 €",
+            "unit": "комплекс",
+            "desc": "Попередня перевірка вузлів та проведення огляду TÜV / DEKRA безпосередньо у майстерні.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg",
+            "tag": "Без черг",
+            "bullets": ["Отримання плакетки HU/AU", "Перевірка CO2 вихлопу", "Повторний огляд безкоштовно"]
+          },
+          {
+            "id": "diagnostics",
+            "category": "Техобслуговування",
+            "title": "Комп'ютерна 3D-діагностика блоків ECU",
+            "price": "49 €",
+            "unit": "фіксовано",
+            "desc": "Повне зчитування помилок усіх електронних систем, тестування датчиків та аналіз параметрів у реальному часі.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg",
+            "tag": "Експрес",
+            "bullets": ["Сканування CAN-шини", "Звіт у друкованому вигляді", "Консультація KFZ-Meister"]
           },
           {
             "id": "klima",
-            "category": "Регламентне ТО",
-            "title": "Обслуговування кондиціонерів (Klimaservice)",
-            "desc": "Перевірка герметичності за допомогою UV-витокошукача, антибактеріальна дезінфекція та заправка фреоном.",
-            "price": "від 79 €",
-            "tag": "Дезінфекція + Фреон",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg"
-          },
-          {
-            "id": "smart_repair",
-            "category": "Кузов & Деталінг",
-            "title": "Smart Repair та видалення вм'ятин (Ausdellen)",
-            "desc": "Локальний ремонт лакофарбового покриття, безфарбове видалення вм'ятин без заміни деталей.",
-            "price": "від 99 €",
-            "tag": "Економія до 60%",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg"
+            "category": "Деталінг & Клімат",
+            "title": "Обслуговування автокондиціонерів Klimaservice",
+            "price": "79 €",
+            "unit": "від",
+            "desc": "Тест герметичності, вакуумування та заправка фреоном R134a або R1234yf з озонуванням.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg",
+            "bullets": ["Ультрафіолетовий пошук витоків", "Заміна салонного фільтра", "Антибактеріальна обробка"]
           },
           {
             "id": "detailing",
-            "category": "Кузов & Деталінг",
-            "title": "Професійний деталінг та хімчистка (Profi-Autoreinigung)",
-            "desc": "Глибинна очистка матеріалів салону, озонування для повного знищення запахів та полірування.",
-            "price": "від 129 €",
-            "tag": "Глибинна чистка",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg"
+            "category": "Деталінг & Клімат",
+            "title": "Глибинне озонування та хімчистка салону",
+            "price": "119 €",
+            "unit": "від",
+            "desc": "Хімічна чистка текстилю та шкіри з розбором, а також повне видалення запахів озоновим генератором.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg",
+            "tag": "Озонування",
+            "bullets": ["Глибинна екстракція плям", "Знищення алергенів та бактерій", "Кондиціонер для шкіри"]
           },
           {
-            "id": "oil_express",
-            "category": "Регламентне ТО",
-            "title": "Експрес-заміна оливи та фільтрів (Ölwechsel)",
-            "desc": "Заміна моторної оливи специфікації OEM з промивкою системи та скиданням сервісного інтервалу.",
-            "price": "від 59 €",
-            "tag": "Експрес 30 хв",
-            "img": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg"
-          },
-          {
-            "id": "brakes_service",
-            "category": "Регламентне ТО",
-            "title": "Діагностика та заміна гальмівної системи",
-            "desc": "Перевірка гальмівних дисків, колодок та гальмівної рідини на стенді з протоколом вимірювань.",
-            "price": "від 119 €",
-            "tag": "Безпека руху",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg"
-          },
-          {
-            "id": "tire_service",
-            "category": "3D Геометрія",
-            "title": "Шиномонтаж та балансування (Reifenservice)",
-            "desc": "Монтаж та комп'ютерне балансування коліс до R22. Офіційний сертифікований партнер reifen.com.",
-            "price": "від 49 €",
-            "tag": "Reifen.com Partner",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
-          }
-        ]
-      },
-      "diag3d": {
-        "kicker": "ТЕХНОЛОГІЧНА ПЕРЕВАГА ASZ HAMBURG",
-        "title": "3D ЛАЗЕРНЕ РЕГУЛЮВАННЯ ПІДВІСКИ ТА ГЕОМЕТРІЇ",
-        "desc": "Відхилення кутів установки коліс прискорюють знос шин на 40% та підвищують витрату пального. Наш 3D-лазерний стенд забезпечує вимірювання з точністю до 0.1 мм.",
-        "badge": "Achsvermessung nach dem Neusten Stand per 3D Laser",
-        "features": [
-          "Вимірювання геометрії колісної бази за 5 хвилин",
-          "Точна калібрувальна матриця для всіх марок авто",
-          "Запобігання передчасному зносу дорогої гуми",
-          "Друкований звіт геометрії підвіски до та після регулювання"
-        ]
-      },
-      "calculator": {
-        "kicker": "ПРОЗОРІСТЬ БЕЗ ПРИХОВАНИХ НАДБАВОК",
-        "title": "КАЛЬКУЛЯТОР ОРИЄНТОВНОЇ ВАРТОСТІ ОБСЛУГОВУВАННЯ",
-        "desc": "Оберіть необхідні процедури та вік автомобіля для отримання розрахунку.",
-        "sliderLabel": "Вік автомобіля (років):",
-        "selectServices": "Оберіть необхідні процедури:",
-        "totalEstimate": "Орієнтовний розрахунок:",
-        "disclaimer": "* Точний кошторис складається майстром після огляду або комп'ютерного сканування.",
-        "cta": "Надіслати цей розрахунок у WhatsApp"
-      },
-      "beforeAfter": {
-        "kicker": "РЕЗУЛЬТАТИ НАШОГО ДЕТАЛІНГ-ПІДРОЗДІЛУ",
-        "title": "ВІДНОВЛЕННЯ ТА ПРОФЕСІЙНИЙ ДЕТАЛІНГ",
-        "subtitle": "Порівняйте стан кузова та салону до та після роботи наших фахівців."
-      },
-      "process": {
-        "kicker": "ПРОСТИЙ ТА ЗРУЧНИЙ СЕРВІС ВІД ПОЧАТКУ ДО КІНЦЯ",
-        "title": "ЯК ПРОХОДИТЬ ОБСЛУГОВУВАННЯ В ASZ HAMBURG",
-        "steps": [
-          {
-            "num": "01",
-            "title": "Швидка заявка у WhatsApp",
-            "desc": "Надішліть фото проблеми, техпаспорт або запит на ТО. Майстер відреагує протягом 15 хвилин."
-          },
-          {
-            "num": "02",
-            "title": "Вхідна діагностика та кошторис",
-            "desc": "Огляд автомобіля на підйомнику або 3D-стенді. Повне узгодження обсягу та ціни перед початком робіт."
-          },
-          {
-            "num": "03",
-            "title": "Професійне виконання робіт",
-            "desc": "Використання оригінальних запчастин або сертифікованих аналогів під наглядом KFZ-Meister."
-          },
-          {
-            "num": "04",
-            "title": "Передача авто та внесення в книжку",
-            "desc": "Готовий автомобіль чекає на вас у визначений час із гарантією та печаткою Meisterbetrieb."
-          }
-        ]
-      },
-      "testimonials": {
-        "kicker": "ПІДТВЕРДЖЕНІ ВІДГУКИ КЛІЄНТІВ У ГАМБУРЗІ",
-        "title": "ЩО КАЖУТЬ АВТОВЛАСНИКИ ПРО AUTO SERVICE ZENTRUM",
-        "subtitle": "Прямі відгуки з Google Maps та офіційного профілю сервісу."
-      },
-      "gallery": {
-        "kicker": "ФОТОГАЛЕРЕЯ МАЙСТЕРНІ ТА РОБІТ",
-        "title": "ЖИВІ КАДРИ З НАШОГО АВТОСЕРВІСУ У ГАМБУРЗІ",
-        "subtitle": "Обладнання, робочий процес та виконані замовлення."
-      },
-      "video": {
-        "kicker": "ВІДЕООГЛЯД МАЙСТЕРНІ",
-        "title": "КУЛЬТУРА ОБСЛУГОВУВАННЯ ТА СУЧАСНЕ ОСНАЩЕННЯ",
-        "desc": "Подивіться, як влаштовані наші робочі пости, діагностичні стенди та зона автодеталінгу на Kieler Straße 207.",
-        "url": "https://videos.pexels.com/video-files/6442794/6442794-hd_1280_720_24fps.mp4",
-        "poster": "https://images.pexels.com/videos/6442794/pexels-photo-6442794.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-      },
-      "faq": {
-        "kicker": "ВІДПОВІДІ НА ПОШИРЕНІ ПИТАННЯ",
-        "title": "ПИТАННЯ ТА ВІДПОВІДІ ПРО ОБСЛУГОВУВАННЯ",
-        "items": [
-          {
-            "q": "Чи зберігається заводська гарантія після ТО у вашому сервісі?",
-            "a": "Так, абсолютно. Як сертифікований KFZ-Meisterbetrieb ми проводимо Inspektion суворо за регламентом автовиробників із використанням відповідних витратних матеріалів та робимо офіційний запис у цифрову або паперову сервісну книжку."
-          },
-          {
-            "q": "Як швидко можна отримати розрахунок вартості ремонту?",
-            "a": "Найшвидший спосіб — надіслати нам у WhatsApp фотографію вм'ятини, код помилки чи копію свідоцтва про реєстрацію. Пан Навабі надасть попередню оцінку вартості протягом 15-30 хвилин у робочий час."
-          },
-          {
-            "q": "Що таке 3D Лазерний розвал-сходження і чому він кращий за звичайний?",
-            "a": "Наш 3D-стенд Achsvermessung сканує геометрію підвіски високоточними лазерними датчиками. Це виключає людську помилку, гарантує точні кути установки коліс та продовжує термін служби шин."
-          },
-          {
-            "q": "Чи можна пройти офіційний техогляд HU/AU безпосередньо у вас?",
-            "a": "Так, ми проводимо попередній огляд автомобіля, усуваємо виявлені недоліки та організовуємо офіційний техогляд експертами (TÜV/DEKRA) безпосередньо в нашій майстерні."
-          },
-          {
-            "q": "Як працює послуга озонування салону при деталінгу?",
-            "a": "Озонування — це технологія екологічної дезінфекції за допомогою генератора озону. Вона знищує 99.9% бактерій, грибків та повністю розщеплює молекули застарілих запахів тютюну, тварин чи сирості."
-          },
-          {
-            "q": "Яка вартість нормо-години робіт у вашому автосервісі?",
-            "a": "Базова вартість нормо-години становить від 89 € (без ПДВ), що суттєво вигідніше за розцінки офіційних дилерських центрів у Гамбурзі при аналогічно високому рівні якості."
-          }
-        ]
-      },
-      "contact": {
-        "kicker": "ПРЯМИЙ ЗВ'ЯЗОК ТА ЛОКАЦІЯ У ГАМБУРЗІ",
-        "title": "ПОДАТИ ЗАЯВКУ НА ОБСЛУГОВУВАННЯ ТА ТЕХОГЛЯД В ГАМБУРЗІ",
-        "subtitle": "Чекаємо на вас на Kieler Straße 207 у Гамбурзі, район Stellingen / Eimsbüttel.",
-        "formTitle": "Записатися на сервіс або отримати консультацію",
-        "nameLabel": "Ваше ім'я",
-        "phoneLabel": "Номер телефону або WhatsApp",
-        "carLabel": "Марка, модель та рік випуску авто",
-        "serviceLabel": "Бажана послуга",
-        "messageLabel": "Короткий опис проблеми або запиту",
-        "submitBtn": "Надіслати запит у сервіс",
-        "address": "Kieler Straße 207, 22525 Hamburg",
-        "phone": "+49 40 85370777",
-        "whatsapp": "+49 176 8000 8000",
-        "email": "info@aszhh.de",
-        "hours": "Пн - Пт: 08:30 - 18:00 | Сб: за записом | Нд: Вихідний",
-        "successMsg": "Дякуємо! Ваша заявка отримана. Ми зв'яжемося з вами найближчим часом."
-      },
-      "footer": {
-        "desc": "Auto Service Zentrum Hamburg — сертифікований німецький KFZ-Meisterbetrieb. Професійний ремонт, 3D розвал-сходження, техогляд та деталінг.",
-        "quickLinks": "Швидка навігація",
-        "contacts": "Контакти сервісу",
-        "workingHours": "Години роботи",
-        "rights": "Всі права захищено.",
-        "studioCredit": "Розроблено Студія Тест"
-      }
-    },
-    "en": {
-      "meta": {
-        "title": "Auto Service Zentrum Hamburg — German KFZ-Meisterbetrieb",
-        "description": "Certified master car workshop in Hamburg. 3D wheel alignment, MOT (HU/AU), computer diagnostics & car detailing.",
-        "lang": "en"
-      },
-      "nav": {
-        "services": "Services & Prices",
-        "meister": "KFZ-Meister",
-        "diagnostics": "3D Alignment",
-        "calculator": "Calculator",
-        "beforeAfter": "Detailing",
-        "reviews": "Reviews",
-        "contact": "Contact",
-        "bookCta": "WhatsApp Booking"
-      },
-      "hero": {
-        "kicker": "Est. 2014 · Kieler Str. 207, Hamburg · Certified KFZ-Meisterbetrieb",
-        "titleMain": "GERMAN PRECISION & CERTIFIED MASTER SERVICE BY",
-        "titleSub": "Service and repair for all vehicle makes according to manufacturer standards with full warranty retention.",
-        "ctaPrimary": "Get estimate via WhatsApp",
-        "ctaSecondary": "Calculate service cost",
-        "addressBadge": "Kieler Straße 207, 22525 Hamburg",
-        "ratingText": "Google Rating 4.8 / 5.0 · 340+ reviews",
-        "masterName": "Mr. Nawabi · Head KFZ-Meister",
-        "hoursText": "Mon-Fri 08:30-18:00 · Sat by appointment",
-        "leftMiniCopy": "Official service log entry in digital manufacturer database.",
-        "rightMiniCopy": "Direct supervision by certified German master Mr. Nawabi.",
-        "heroVideo": "https://videos.pexels.com/video-files/18101981/18101981-hd_1280_720_30fps.mp4",
-        "heroVideoPoster": "https://images.pexels.com/videos/18101981/pexels-photo-18101981.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-      },
-      "stats": [
-        { "value": "100%", "label": "Manufacturer Warranty Retention" },
-        { "value": "3D Laser", "label": "State-of-the-art Alignment Rig" },
-        { "value": "4.8 / 5.0", "label": "Official Google Maps Rating" },
-        { "value": "from 49 €", "label": "Express Unit Diagnostics" }
-      ],
-      "meister": {
-        "kicker": "PERSONAL RESPONSIBILITY OF A CERTIFIED MASTER",
-        "title": "WHY HAMBURG CAR OWNERS CHOOSE OUR MEISTERBETRIEB",
-        "quote": "“At our workshop, every vehicle undergoes personal quality control. We offer dealer-level service without inflated costs and with transparent agreement on every estimate.”",
-        "author": "Mr. Nawabi",
-        "role": "Founder & Head German KFZ-Meister",
-        "points": [
-          "Official KFZ-Meisterbetrieb accreditation with digital service logbook registration",
-          "Direct cost confirmation via WhatsApp — no unexpected invoice surprises",
-          "In-house car detailing department with professional ozone treatment for total odor removal",
-          "Official reifen.com certified partner with tire mounting & balancing guarantee"
-        ]
-      },
-      "services": {
-        "kicker": "FULL AUTOMOTIVE SERVICE RANGE IN HAMBURG",
-        "title": "PRICE LIST & MAINTENANCE SERVICES",
-        "subtitle": "Labor rate from 89 € excl. VAT. Dealer-grade equipment and certified components.",
-        "categories": ["All Services", "Scheduled Maintenance", "3D Geometry", "Body & Detailing"],
-        "items": [
-          {
-            "id": "inspektion",
-            "category": "Scheduled Maintenance",
-            "title": "Scheduled Maintenance (Inspektion)",
-            "desc": "Full inspection, fluid & filter replacement according to manufacturer specifications retaining full warranty.",
-            "price": "from 149 €",
-            "tag": "Warranty Retained",
-            "img": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg"
-          },
-          {
-            "id": "achsvermessung",
-            "category": "3D Geometry",
-            "title": "3D Laser Wheel Alignment (Achsvermessung)",
-            "desc": "High-precision geometry adjustment on the latest 3D laser stand for vehicle handling.",
-            "price": "from 89 €",
-            "tag": "3D Laser Tech",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg"
-          },
-          {
-            "id": "hu_au",
-            "category": "Scheduled Maintenance",
-            "title": "Official Inspection (HU & AU Service)",
-            "desc": "Pre-check diagnostics and official inspection / emission testing conducted by TÜV/DEKRA.",
-            "price": "from 139 €",
-            "tag": "Official Certificate",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
-          },
-          {
-            "id": "klima",
-            "category": "Scheduled Maintenance",
-            "title": "Air Conditioning Service (Klimaservice)",
-            "desc": "Leak testing via UV detector, antibacterial disinfection and refrigerant gas refill.",
-            "price": "from 79 €",
-            "tag": "Disinfection + Gas",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg"
+            "id": "brakes",
+            "category": "Підвіска & 3D",
+            "title": "Заміна гальмівних дисків та колодок",
+            "price": "99 €",
+            "unit": "від",
+            "desc": "Заміна компонентів гальмівної системи з очищенням супортів, змащуванням та перевіркою гальмівної рідини.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg",
+            "bullets": ["Комплектуючі Brembo / ATE", "Прокачування гальмівного контуру", "Вимірювання товщини дисків"]
           },
           {
             "id": "smart_repair",
-            "category": "Body & Detailing",
-            "title": "Smart Repair & Dent Removal (Ausdellen)",
-            "desc": "Local paint touch-ups and paintless dent repair without expensive body part replacement.",
-            "price": "from 99 €",
-            "tag": "Save up to 60%",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg"
-          },
-          {
-            "id": "detailing",
-            "category": "Body & Detailing",
-            "title": "Pro Detailing & Interior Cleaning (Profi-Autoreinigung)",
-            "desc": "Deep carpet & leather cleaning, ozone odor removal and body paint polishing.",
-            "price": "from 129 €",
-            "tag": "Deep Interior Clean",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg"
-          },
-          {
-            "id": "oil_express",
-            "category": "Scheduled Maintenance",
-            "title": "Express Oil & Filter Change (Ölwechsel)",
-            "desc": "OEM specification engine oil change with system flushing and service interval reset.",
-            "price": "from 59 €",
-            "tag": "30 Min Express",
-            "img": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg"
-          },
-          {
-            "id": "brakes_service",
-            "category": "Scheduled Maintenance",
-            "title": "Brake System Diagnostics & Replacement",
-            "desc": "Inspection of brake discs, pads, and fluid on automated test rig with measurement report.",
-            "price": "from 119 €",
-            "tag": "Safety First",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg"
-          },
-          {
-            "id": "tire_service",
-            "category": "3D Geometry",
-            "title": "Tire Mounting & Balancing (Reifenservice)",
-            "desc": "Wheel mounting and computer balancing up to R22. Certified official partner of reifen.com.",
-            "price": "from 49 €",
-            "tag": "Reifen.com Partner",
-            "img": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
+            "category": "Деталінг & Клімат",
+            "title": "Smart Repair & Видалення вм'ятин без фарбування",
+            "price": "69 €",
+            "unit": "від",
+            "desc": "Локальний ремонт ЛФП та вирівнювання вм'ятин за технологією PDR для збереження рідної фарби.",
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg",
+            "tag": "PDR Технологія",
+            "bullets": ["Без демонтажу деталей", "Економія до 60% проти фарбування", "Підготовка під Leasing-Rückgabe"]
           }
-        ]
+        ],
+        "footnote": "* Усі ціни вказані з урахуванням 19% MwSt. Вартість запчастин розраховується за каталогом OEM."
       },
-      "diag3d": {
-        "kicker": "TECHNOLOGICAL EDGE AT ASZ HAMBURG",
-        "title": "3D LASER SUSPENSION & GEOMETRY ALIGNMENT",
-        "desc": "Incorrect wheel angles cause premature tire wear up to 40% faster and increase fuel consumption. Our 3D laser alignment stand guarantees accuracy to 0.1 millimeter.",
-        "badge": "Achsvermessung nach dem Neusten Stand per 3D Laser",
-        "features": [
-          "Wheelbase geometry scan in under 5 minutes",
-          "Precise calibration matrix for all car makes",
-          "Prevents premature wear of expensive tires",
-          "Printed alignment report before and after adjustment"
-        ]
+      "trust": {
+        "kicker": "КВАЛІФІКАЦІЯ ТА ПЕРСОНАЛЬНА ВІДПОВІДАЛЬНІСТЬ",
+        "h2": "Німецький інженерний стандарт у кожній деталі",
+        "quote": "«Для мене автомайстерня — це інженерна точність та персональна відповідальність перед кожним автовласником.»",
+        "masterName": "Herr Nawabi",
+        "masterRole": "KFZ-Meister & Засновник майстерні ASZ Hamburg",
+        "masterDesc": "Офіційний німецький диплом KFZ-Meister з правом ведення автомайстерні та підготовки спеціалістів.",
+        "stats": [
+          { "num": "2018", "label": "Рік заснування в Гамбурзі" },
+          { "num": "340+", "label": "Підтверджених відгуків" },
+          { "num": "42", "label": "Точки перевірки ТО" },
+          { "num": "0.01°", "label": "Точність лазера 3D" }
+        ],
+        "cards": [
+          {
+            "title": "Сертифікований статус KFZ-Meisterbetrieb",
+            "desc": "Усі роботи контролюються безпосередньо керівником паном Навабі згідно з регламентами заводів-виробників."
+          },
+          {
+            "title": "Збереження гарантії за регламентом ЄС",
+            "desc": "ТО проводиться за нормативами GVO 461/2010. Офіційна гарантія на ваше авто діє без обмежень."
+          },
+          {
+            "title": "Власний деталінг та усунення запахів",
+            "desc": "Спеціалізована зона хімчистки та озонування для повного відновлення інтер'єру та видалення алергенів."
+          },
+          {
+            "title": "Миттєвий розрахунок через WhatsApp",
+            "desc": "Надішліть фото свідоцтва про реєстрацію (Fahrzeugschein) — орієнтовний кошторис за 15 хвилин."
+          }
+        ],
+        "images": {
+          "main": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg",
+          "secondary": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg",
+          "caption": "Робочий процес у зоні 3D-діагностики ASZ Hamburg"
+        }
       },
-      "calculator": {
-        "kicker": "TRANSPARENCY WITHOUT HIDDEN SURPRISES",
-        "title": "SERVICE ESTIMATION CALCULATOR",
-        "desc": "Select required procedures and vehicle age for an instant estimation.",
-        "sliderLabel": "Vehicle age (years):",
-        "selectServices": "Select required services:",
-        "totalEstimate": "Estimated total:",
-        "disclaimer": "* Final estimate is confirmed by our KFZ-Meister after physical inspection or scan.",
-        "cta": "Send this estimate to WhatsApp"
-      },
-      "beforeAfter": {
-        "kicker": "DETAILING DIVISION RESULTS",
-        "title": "RESTORATION & PROFESSIONAL DETAILING",
-        "subtitle": "Compare body and interior condition before and after our specialist care."
+      "tech": {
+        "kicker": "СУЧАСНЕ ДІАГНОСТИЧНЕ ОБЛАДНАННЯ",
+        "h2": "3D-Лазерна точність калібрування підвіски (Achsvermessung)",
+        "p1": "Сервісний центр оснащений новітнім 3D-лазерним стендом вимірювання геометрії коліс. Це дозволяє виявити відхилення у кілька десятих часток міліметра.",
+        "p2": "Точне регулювання розвалу-сходження усуває відведення керма в бік, гарантує рівномірне зношування шин та підвищує стабільність авто на високій швидкості.",
+        "videoSrc": "https://videos.pexels.com/video-files/6442794/6442794-hd_1280_720_24fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/6442794/pexels-photo-6442794.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
       },
       "process": {
-        "kicker": "SIMPLE & CONVENIENT SERVICE FROM START TO FINISH",
-        "title": "HOW SERVICE WORKS AT ASZ HAMBURG",
+        "kicker": "АЛГОРИТМ ОБСЛУГОВУВАННЯ",
+        "h2": "4 етапи до технічно справного автомобіля",
         "steps": [
           {
             "num": "01",
-            "title": "Quick WhatsApp Request",
-            "desc": "Send photos of the issue, registration document or service inquiry. Our master replies within 15 mins."
+            "title": "Звернення та фото-оцінка",
+            "desc": "Пишете у WhatsApp або телефонуєте нам. Надсилаєте фотографії чи описуєте симптоми несправності."
           },
           {
             "num": "02",
-            "title": "Diagnostic & Estimate",
-            "desc": "Vehicle inspection on lift or 3D alignment stand. Full cost approval before starting work."
+            "title": "Прийом та 3D-діагностика",
+            "desc": "Приїжджаєте на Kieler Str. 207 у зручний час. Проводимо комп'ютерну та лазерну діагностику."
           },
           {
             "num": "03",
-            "title": "Master-Supervised Work",
-            "desc": "Precision repair using original or certified OEM parts monitored by KFZ-Meister."
+            "title": "Узгодження фіксованого кошторису",
+            "desc": "Погоджуємо вартість запчастин та робіт ДО початку виконання ремонту. Без прихованих позицій."
           },
           {
             "num": "04",
-            "title": "Handover & Service Log Stamp",
-            "desc": "Your vehicle is ready on time with official Meisterbetrieb warranty and stamp."
+            "title": "Видача автомобіля з гарантією",
+            "desc": "Отримуєте відремонтований автомобіль із роздрукованим протоколом та записом у сервісну книжку."
           }
+        ]
+      },
+      "gallery": {
+        "kicker": "ПОРТФОЛІО ВИКОНАНИХ РОБІТ",
+        "h2": "Реальні автомобілі клієнтів у майстерні ASZ Hamburg",
+        "sub": "Галерея робочих процесів, автодеталінгу та 3D-налаштування підвіски.",
+        "items": [
+          { "url": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg", "title": "Комплексне техобслуговування двигуна" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg", "title": "3D-стенд розвалу-сходження коліс" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg", "title": "Діагностика гальмівної системи" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg", "title": "Заправка та дезінфекція Klimaservice" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg", "title": "Глибинне озонування та хімчистка" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg", "title": "Видалення вм'ятин Smart Repair" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/20637921_824980174337807_2684391906527486961_n-400x400.jpg", "title": "Шиномонтаж та зберігання шин" },
+          { "url": "https://aszhh.de/wp-content/uploads/2020/07/15800018_692937637542062_5527335570790253685_o-400x400.jpg", "title": "Полірування фар та захисне покриття" }
         ]
       },
       "testimonials": {
-        "kicker": "VERIFIED CUSTOMER REVIEWS IN HAMBURG",
-        "title": "WHAT CAR OWNERS SAY ABOUT AUTO SERVICE ZENTRUM",
-        "subtitle": "Direct feedback from Google Maps and our official service profile."
-      },
-      "gallery": {
-        "kicker": "WORKSHOP & PROJECTS GALLERY",
-        "title": "REAL PHOTOS FROM OUR HAMBURG WORKSHOP",
-        "subtitle": "Equipment, workflow, and completed customer vehicles."
-      },
-      "video": {
-        "kicker": "WORKSHOP VIDEO TOUR",
-        "title": "HIGH SERVICE CULTURE & MODERN EQUIPMENT",
-        "desc": "Take a look at our repair bays, diagnostic stands, and detailing setup at Kieler Straße 207.",
-        "url": "https://videos.pexels.com/video-files/6442794/6442794-hd_1280_720_24fps.mp4",
-        "poster": "https://images.pexels.com/videos/6442794/pexels-photo-6442794.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-      },
-      "faq": {
-        "kicker": "FREQUENTLY ASKED QUESTIONS",
-        "title": "QUESTIONS & ANSWERS ABOUT VEHICLE SERVICE",
+        "kicker": "ПІДТВЕРДЖЕНІ ВІДГУКИ КЛІЄНТІВ У GOOGLE",
+        "h2": "Що кажуть автовласники Гамбурга про наш сервіс",
+        "rating": "4.8 / 5.0",
+        "totalReviews": "4.8 / 5.0 · Google Maps · 340+ підтверджених відгуків",
+        "featuredQuote": "«In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten. Gerne wieder, bis zum nächsten mal!»",
+        "featuredAuthor": "Olaf Schaelke",
+        "featuredRole": "Власник Volkswagen Passat · Клієнт з 2020 року",
         "items": [
           {
-            "q": "Is my manufacturer warranty preserved after service with you?",
-            "a": "Yes, 100%. As an officially certified KFZ-Meisterbetrieb, we perform all maintenance strictly according to vehicle manufacturer guidelines using certified parts and enter official logs into your digital or paper service book."
+            "quote": "Sehr kompetent, Hilfsbereit und freundlich. In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten. Gerne wieder!",
+            "author": "Olaf Schaelke",
+            "role": "Власник Volkswagen Passat"
           },
           {
-            "q": "How fast can I get a repair cost estimate?",
-            "a": "The fastest method is via WhatsApp — send us a picture of the damage, fault code, or vehicle document. Mr. Nawabi provides an estimate within 15-30 minutes during business hours."
+            "quote": "Megastarke Leistung – trotz hartnäckiger Gerüche in einem Sportsitz hat sich das Team ASZ HH durchgebissen und einen tadellosen Job gemacht. Geruch weg, optisch perfekt.",
+            "author": "Jan Sass",
+            "role": "Клієнт автодеталінгу"
           },
           {
-            "q": "What is 3D laser wheel alignment and why is it superior?",
-            "a": "Our 3D Achsvermessung system measures suspension geometry using high-precision laser sensors, eliminating human error and ensuring handling while preventing premature tire wear."
+            "quote": "Absolut kompetentes und nettes Team! Es gibt kein Problem, was hier nicht gelöst werden kann. Super Service, klasse Beratung und absolut saubere Arbeit.",
+            "author": "Katie Mueller",
+            "role": "Постійний клієнт"
           },
           {
-            "q": "Can I complete the official MOT (HU/AU) at your workshop?",
-            "a": "Yes, we handle pre-inspection diagnostics, fix any issues, and host official TÜV/DEKRA inspectors right at our facility."
+            "quote": "Sehr gutes Gesamtpaket. Ich wollte eigentlich nur mein Licht einstellen lassen, habe aber direkt einen ganzen Winter Service zu einem Super Angebot bekommen.",
+            "author": "Extr Digital",
+            "role": "Власник Audi A6"
           },
           {
-            "q": "How does ozone interior disinfection work?",
-            "a": "Ozone treatment sanitizes interior materials ecologically, eliminating 99.9% of bacteria and permanently neutralizing stubborn smoke, pet, or humidity odors."
-          },
-          {
-            "q": "What is your labor rate per hour?",
-            "a": "Our base rate starts from 89 € / hour (excl. VAT), providing significantly better value than main dealership prices while maintaining master-level German quality."
+            "quote": "Ich freue mich wie ein Schneehuhn, so eine gute Werkstatt gefunden zu haben. Das Team ist nicht nur super freundlich, sondern arbeitet korrekt und sauber!",
+            "author": "Ilona Japp",
+            "role": "Клієнт ТО та ремонту"
           }
         ]
       },
-      "contact": {
-        "kicker": "DIRECT CONTACT & LOCATION IN HAMBURG",
-        "title": "BOOK A SERVICE APPOINTMENT & INSPECTION IN HAMBURG",
-        "subtitle": "We look forward to welcoming you at Kieler Straße 207 in Hamburg, Stellingen / Eimsbüttel district.",
-        "formTitle": "Book a service appointment or consultation",
-        "nameLabel": "Your Name",
-        "phoneLabel": "Phone Number / WhatsApp",
-        "carLabel": "Car Make, Model & Year",
-        "serviceLabel": "Requested Service",
-        "messageLabel": "Brief description of the request",
-        "submitBtn": "Submit Request",
-        "address": "Kieler Straße 207, 22525 Hamburg",
-        "phone": "+49 40 85370777",
-        "whatsapp": "+49 176 8000 8000",
+      "whatsappBanner": {
+        "kicker": "ПРЯМИЙ ЗВ'ЯЗОК З KFZ-MEISTER",
+        "title": "Забронюйте час візиту або отримайте кошторис за фото",
+        "subtitle": "Сфотографуйте пошкодження або свідоцтво про реєстрацію (Fahrzeugschein) та надішліть пану Навабі у WhatsApp.",
+        "cta": "Надіслати фото у WhatsApp",
+        "phoneFormatted": "+49 40 8537 0890",
+        "whatsappUrl": "https://wa.me/494085370890?text=%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%B3%D0%BE%20%D0%B4%D0%BD%D1%8F!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B4%D1%86%D1%82%D0%BD%D0%B0%D1%82%D0%B8%D1%81%D1%8C%20%D0%B2%D0%B0%D1%80%D1%82%D1%96%D1%81%D1%82%D1%8C%20%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B3%D0%BE%D0%B2%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F"
+      },
+      "faq": {
+        "kicker": "ТЕХНІЧНІ ТА ОРГАНІЗАЦІЙНІ ПИТАННЯ",
+        "h2": "Усе, що потрібно знати перед візитом до майстерні",
+        "items": [
+          {
+            "q": "Чи зберігається офіційна гарантія виробника при проходженні ТО у вашій майстерні?",
+            "a": "Так, абсолютно. Згідно з регламентом ЄС (GVO 461/2010), виконання планового техогляду (Inspektion) у сертифікованій майстерні KFZ-Meisterbetrieb із дотриманням регламенту повністю зберігає гарантію автовиробника."
+          },
+          {
+            "q": "Скільки часу займає 3D-розвал-сходження (Achsvermessung)?",
+            "a": "Зазвичай процедура лазерного вимірювання та повного налаштування кутів підвіски займає від 45 до 60 хвилин."
+          },
+          {
+            "q": "Як відбувається проходження офіційного техогляду HU/AU?",
+            "a": "Ми проводимо попередню діагностику автомобіля, щоб виявити зауваження. Після усунення дефектів інспектор TÜV/DEKRA проводиться офіційний огляд безпосередньо у нас."
+          },
+          {
+            "q": "Чи можна усунути складні запахи тютюну або тварин із салону?",
+            "a": "Так. Наш деталінг-підрозділ використовує промисловий озоновий генератор у поєднанні з глибинною хімчисткою. Озон розщеплює молекули неприємних запахів."
+          },
+          {
+            "q": "Яка вартість норма-години робіт у вашому сервісі?",
+            "a": "Базова вартість норми-години становить 89 EUR, що доступніше за дилерські центри Гамбурга (де ціна сягає 130–160 EUR), при ідентичній кваліфікації."
+          },
+          {
+            "q": "Як швидко я можу отримати розрахунок вартості за фото?",
+            "a": "Протягом 15 хвилин у робочий час. Просто надішліть фотографії у наш офіційний WhatsApp."
+          }
+        ]
+      },
+      "location": {
+        "kicker": "ЛОКАЦІЯ ТА ГРАФІК РОБОТИ",
+        "h2": "Чекаємо вас на Kieler Straße 207 у Гамбурзі",
+        "address": "Kieler Straße 207, 22525 Hamburg, Germany",
+        "hours": "Пн – Пт: 08:00 – 18:00 | Сб: 09:00 – 14:00 | Нд: Вихідний",
+        "hoursRows": [
+          { "days": "Понеділок – П'ятниця", "time": "08:00 – 18:00" },
+          { "days": "Субота", "time": "09:00 – 14:00" },
+          { "days": "Неділя", "time": "Вихідний" }
+        ],
+        "phone": "+49 40 8537 0890",
         "email": "info@aszhh.de",
-        "hours": "Mon - Fri: 08:30 - 18:00 | Sat: By appointment | Sun: Closed",
-        "successMsg": "Thank you! Your request has been received. We will contact you shortly."
+        "mapQuery": "Auto+Service+Zentrum+Hamburg+Kieler+Str.+207+22525+Hamburg",
+        "zones": ["Eimsbüttel", "Altona", "Stellingen", "Lokstedt", "Bahrenfeld", "Eidelstedt"]
+      },
+      "booking": {
+        "kicker": "ОФІЦІЙНИЙ ЗАПИС НА ОБСЛУГОВУВАННЯ",
+        "h2": "Забронюйте зручний час візиту або отримайте консультацію",
+        "sub": "Заповніть форму нижче — адміністратор зв'яжеться з вами для підтвердження та уточнення деталей.",
+        "trustLine": "Ваші дані захищені. Ніякого спаму, тільки direct-зв'язок щодо авто.",
+        "fields": {
+          "name": "Ваше ім'я",
+          "phone": "Номер телефону",
+          "car": "Марка та модель автомобіля",
+          "service": "Оберіть послугу",
+          "date": "Бажана дата візиту",
+          "notes": "Короткий опис проблеми або побажання",
+          "submit": "Записатися на ТО / Ремонт",
+          "sending": "Надсилання заявки...",
+          "success": "Дякуємо! Вашу заявку прийнято. Пан Навабі зв'яжеться з вами найближчим часом."
+        }
       },
       "footer": {
-        "desc": "Auto Service Zentrum Hamburg — certified German KFZ-Meisterbetrieb. Professional repairs, 3D laser alignment, MOT inspection & detailing.",
-        "quickLinks": "Quick Navigation",
-        "contacts": "Workshop Contacts",
-        "workingHours": "Opening Hours",
-        "rights": "All rights reserved.",
-        "studioCredit": "Developed by Студія Тест"
+        "wordmark": "AUTO SERVICE ZENTRUM HAMBURG",
+        "tagline": "Сертифікований автосервіс KFZ-Meisterbetrieb у Гамбурзі. Точність, прозорість та надійність із збереженням дилерської гарантії.",
+        "masterTitle": "Керівник майстерні:",
+        "masterName": "Herr Nawabi (KFZ-Meister)",
+        "rights": "Всі права захищені.",
+        "partner": "Офіційний партнер reifen.com",
+        "credit": "Розроблено Студія Тест"
       }
     }
   }
