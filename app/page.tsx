@@ -1,41 +1,46 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import { MarqueeTicker, WatermarkBand, StatementBand } from "@/components/Interstitials";
-import ServicesSection from "@/components/ServicesSection";
-import CalculatorSection from "@/components/CalculatorSection";
-import TrustSection from "@/components/TrustSection";
-import TechShowcase from "@/components/TechShowcase";
+import SocialProof from "@/components/SocialProof";
+import Services from "@/components/Services";
+import Calculator from "@/components/Calculator";
+import TechSpotlight from "@/components/TechSpotlight";
+import DetailingSpotlight from "@/components/DetailingSpotlight";
+import Trust from "@/components/Trust";
 import ProcessSection from "@/components/ProcessSection";
-import GallerySection from "@/components/GallerySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import WhatsAppBanner from "@/components/WhatsAppBanner";
+import Testimonials from "@/components/Testimonials";
+import Gallery from "@/components/Gallery";
+import VideoSection from "@/components/VideoSection";
+import CtaBanner from "@/components/CtaBanner";
 import FaqSection from "@/components/FaqSection";
-import LocationSection from "@/components/LocationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { MarqueeTicker, StatementBand, HairlineStrip } from "@/components/Interstitials";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <Header />
-      <main className="flex-grow">
-        <Hero />
-        <MarqueeTicker />
-        <ServicesSection />
-        <WatermarkBand text="3D LASER ACHSVERMESSUNG" label="ТЕХНІЧНИЙ РЕГЛАМЕНТ ЄС" />
-        <CalculatorSection />
-        <TrustSection />
-        <StatementBand />
-        <TechShowcase />
-        <ProcessSection />
-        <GallerySection />
-        <TestimonialsSection />
-        <WhatsAppBanner />
-        <FaqSection />
-        <LocationSection />
-        <ContactSection />
+      <main>
+        <Reveal><Hero /></Reveal>
+        <Reveal><MarqueeTicker /></Reveal>
+        <Reveal><SocialProof /></Reveal>
+        <Reveal><Services /></Reveal>
+        <Reveal><HairlineStrip /></Reveal>
+        <Reveal><Calculator /></Reveal>
+        <Reveal><TechSpotlight /></Reveal>
+        <Reveal><DetailingSpotlight /></Reveal>
+        <Reveal><StatementBand /></Reveal>
+        <Reveal><Trust /></Reveal>
+        <Reveal><ProcessSection /></Reveal>
+        <Reveal><Testimonials /></Reveal>
+        <Reveal><Gallery /></Reveal>
+        <Reveal><VideoSection /></Reveal>
+        <Reveal><CtaBanner /></Reveal>
+        <Reveal><FaqSection /></Reveal>
+        <Reveal><ContactSection /></Reveal>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

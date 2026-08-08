@@ -4,145 +4,225 @@ import { useState, useEffect } from "react";
 import { useLocale } from "@/lib/i18n";
 
 export default function Header() {
-  const { t } = useLocale();
+  const { locale, setLocale, t } = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 30);
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "#services", label: t("nav.services") as string },
-    { href: "#calculator", label: t("nav.calculator") as string },
-    { href: "#tech", label: t("nav.tech") as string },
-    { href: "#trust", label: t("nav.about") as string },
-    { href: "#gallery", label: t("nav.gallery") as string },
-    { href: "#reviews", label: t("nav.reviews") as string },
-    { href: "#faq", label: t("nav.faq") as string },
-    { href: "#contact", label: t("nav.contact") as string },
-  ];
+  const whatsappText = String(t("nav.cta") || "Termin via WhatsApp");
 
   return (
-    <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-[hsl(215_35%_8%/0.95)] backdrop-blur-md border-b border-[hsl(215_35%_20%)] py-3 shadow-xl"
-            : "bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-          {/* Wordmark Logo */}
-          <a href="#" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-10 h-10 rounded bg-[hsl(24_95%_53%)] flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
-              <svg className="w-6 h-6 fill-current text-white" viewBox="0 0 32 32">
-                <path d="M7 23L16 6L25 23H20.5L16 14L11.5 23H7Z" />
-                <path d="M12 20H20V23H12V20Z" fill="hsl(215, 45%, 15%)" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-extrabold text-xl leading-tight tracking-wide text-white uppercase">
-                AUTO SERVICE ZENTRUM
-              </span>
-              <span className="text-[0.7rem] tracking-widest text-[hsl(24_95%_53%)] font-semibold uppercase">
-                KFZ-MEISTERBETRIEB · HAMBURG
-              </span>
-            </div>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-slate-950/95 backdrop-blur-md border-b border-slate-800 py-3 shadow-2xl"
+          : "bg-gradient-to-b from-slate-950/90 via-slate-950/50 to-transparent py-5"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        {/* Brand Logo & Meister Mark */}
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center font-extrabold text-slate-950 text-xl tracking-tighter shadow-lg shadow-accent/20 group-hover:scale-105 transition-transform">
+            ASZ
+          </div>
+          <div className="flex flex-col">
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white leading-none font-display">
+              AUTO SERVICE ZENTRUM
+            </span>
+            <span className="text-[10px] tracking-widest text-accent uppercase font-bold mt-1">
+              KFZ-Meisterbetrieb · Hamburg
+            </span>
+          </div>
+        </a>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-300">
+          <a href="#services" className="hover:text-accent transition-colors">
+            {String(t("nav.services"))}
+          </a>
+          <a href="#rechner" className="hover:text-accent transition-colors">
+            {String(t("nav.calculator"))}
+          </a>
+          <a href="#meister" className="hover:text-accent transition-colors">
+            {String(t("nav.meister"))}
+          </a>
+          <a href="#detailing" className="hover:text-accent transition-colors">
+            {String(t("nav.detailing"))}
+          </a>
+          <a href="#bewertungen" className="hover:text-accent transition-colors">
+            {String(t("nav.reviews"))}
+          </a>
+          <a href="#galerie" className="hover:text-accent transition-colors">
+            {String(t("nav.gallery"))}
+          </a>
+          <a href="#kontakt" className="hover:text-accent transition-colors">
+            {String(t("nav.contact"))}
+          </a>
+        </nav>
+
+        {/* Actions & Phone / WhatsApp CTAs */}
+        <div className="hidden sm:flex items-center gap-4">
+          <a
+            href="tel:+49405401050"
+            className="text-xs font-extrabold text-slate-300 hover:text-accent transition-colors uppercase tracking-wider hidden xl:block"
+          >
+            040 540 10 50
           </a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-6">
-            {navLinks.slice(0, 6).map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-[hsl(24_95%_53%)] transition-colors py-1"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* Desktop Direct Call & WhatsApp */}
-          <div className="hidden md:flex items-center gap-3">
-            <a
-              href="tel:+494085370890"
-              className="text-xs font-semibold text-white/90 hover:text-white px-3 py-2 rounded bg-white/10 hover:bg-white/20 transition-colors border border-white/10 flex items-center gap-1.5"
+          {/* Language Switcher */}
+          <div className="flex items-center bg-slate-900 border border-slate-700/80 rounded-full p-1 text-xs">
+            <button
+              onClick={() => setLocale("de")}
+              className={`px-2.5 py-1 rounded-full font-bold transition-all ${
+                locale === "de"
+                  ? "bg-accent text-slate-950 shadow-sm"
+                  : "text-slate-400 hover:text-white"
+              }`}
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              +49 40 8537 0890
-            </a>
-            <a
-              href="https://wa.me/494085370890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-[hsl(24_95%_53%)] hover:bg-[hsl(24_95%_45%)] rounded shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+              DE
+            </button>
+            <button
+              onClick={() => setLocale("en")}
+              className={`px-2.5 py-1 rounded-full font-bold transition-all ${
+                locale === "en"
+                  ? "bg-accent text-slate-950 shadow-sm"
+                  : "text-slate-400 hover:text-white"
+              }`}
             >
-              {t("nav.whatsapp") as string}
-            </a>
+              EN
+            </button>
           </div>
 
-          {/* Mobile Hamburger Toggle */}
+          <a
+            href="https://wa.me/491724715522?text=Hallo%20ASZ%20Hamburg,%20ich%20m%C3%B6chte%20einen%20Termin%20anfragen."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-2.5 rounded-full font-extrabold text-xs uppercase tracking-wide flex items-center gap-2 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-all"
+          >
+            <span className="w-2 h-2 rounded-full bg-slate-950 animate-ping" />
+            <span>{whatsappText}</span>
+          </a>
+        </div>
+
+        {/* Mobile Hamburger Toggle */}
+        <div className="flex items-center gap-2 lg:hidden">
+          <button
+            onClick={() => setLocale(locale === "de" ? "en" : "de")}
+            className="text-xs font-bold px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700"
+          >
+            {locale.toUpperCase()}
+          </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Navigation Menu"
-            className="lg:hidden text-white p-2 focus:outline-none"
+            aria-label="Hauptmenü öffnen"
+            className="p-2 text-slate-200 hover:text-accent focus:outline-none"
           >
-            <svg className="w-7 h-7 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2">
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               )}
             </svg>
           </button>
         </div>
-      </header>
+      </div>
 
-      {/* Full-screen Mobile Overlay */}
+      {/* Fullscreen Overlay Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-[hsl(215_35%_8%)] flex flex-col justify-between p-8 pt-24 lg:hidden">
-          <div className="space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-2xl font-display font-bold text-white hover:text-[hsl(24_95%_53%)] transition-colors border-b border-white/10 pb-3"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          <div className="space-y-3 pt-6 border-t border-white/10">
+        <div className="lg:hidden fixed inset-0 top-[60px] bg-slate-950/98 backdrop-blur-xl border-t border-slate-800 z-40 flex flex-col justify-between p-6">
+          <nav className="flex flex-col gap-4 text-base font-extrabold uppercase tracking-wider text-slate-200 mt-2">
             <a
-              href="tel:+494085370890"
-              className="block w-full text-center py-3 rounded bg-white/10 text-white font-semibold text-sm"
+              href="#services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
             >
-              +49 40 8537 0890 (Прямий дзвонок)
+              {String(t("nav.services"))}
             </a>
             <a
-              href="https://wa.me/494085370890"
+              href="#rechner"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.calculator"))}
+            </a>
+            <a
+              href="#meister"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.meister"))}
+            </a>
+            <a
+              href="#detailing"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.detailing"))}
+            </a>
+            <a
+              href="#bewertungen"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.reviews"))}
+            </a>
+            <a
+              href="#galerie"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.gallery"))}
+            </a>
+            <a
+              href="#kontakt"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2.5 border-b border-slate-800/80 hover:text-accent"
+            >
+              {String(t("nav.contact"))}
+            </a>
+          </nav>
+
+          <div className="flex flex-col gap-3 mb-6">
+            <a
+              href="https://wa.me/491724715522?text=Hallo%20ASZ%20Hamburg,%20ich%20m%C3%B6chte%20einen%20Termin%20anfragen."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-center py-3.5 rounded bg-[hsl(24_95%_53%)] text-white font-bold text-sm uppercase tracking-wider"
+              className="w-full bg-emerald-500 text-slate-950 font-extrabold py-3.5 rounded-xl text-center text-xs uppercase tracking-wider shadow-lg shadow-emerald-500/20"
             >
-              {t("nav.whatsapp") as string}
+              WhatsApp Direct (+49 172 471 55 22)
+            </a>
+            <a
+              href="tel:+49405401050"
+              className="w-full bg-slate-900 text-white font-extrabold py-3.5 rounded-xl text-center text-xs uppercase tracking-wider border border-slate-700"
+            >
+              Anrufen: 040 540 10 50
             </a>
           </div>
         </div>
       )}
-    </>
+    </header>
   );
 }

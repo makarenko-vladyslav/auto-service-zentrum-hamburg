@@ -1,51 +1,48 @@
 "use client";
 
-import { useLocale } from "@/lib/i18n";
-
 export function MarqueeTicker() {
-  const { t } = useLocale();
-  const tickerItems = (t("ticker") as string[]) || [];
-
   return (
-    <div className="w-full bg-[hsl(215_45%_15%)] border-y border-[hsl(215_35%_25%)] py-3 overflow-hidden select-none">
-      <div className="flex gap-8 whitespace-nowrap animate-[marquee_28s_linear_infinite]">
-        {[...tickerItems, ...tickerItems, ...tickerItems].map((item, index) => (
-          <div key={index} className="flex items-center gap-6">
-            <span className="text-xs sm:text-sm font-display font-bold uppercase tracking-wider text-white/90">
-              {item}
-            </span>
-            <span className="text-[hsl(24_95%_53%)] font-bold">·</span>
-          </div>
-        ))}
+    <div className="bg-accent text-slate-950 py-3.5 overflow-hidden whitespace-nowrap font-extrabold text-xs uppercase tracking-widest border-y border-amber-500/50">
+      <div className="inline-flex gap-12 animate-marquee">
+        <span>KFZ-MEISTERBETRIEB HERR NAWABI</span>
+        <span>—</span>
+        <span>3D-LASER-ACHSVERMESSUNG DIGITAL</span>
+        <span>—</span>
+        <span>HU / AU TAGES-CHECK</span>
+        <span>—</span>
+        <span>PROFI-AUTOREINIGUNG & OZON</span>
+        <span>—</span>
+        <span>INSPEKTION MIT HERSTELLERGARANTIE</span>
+        <span>—</span>
+        <span>KIELER STRASSE 207 HAMBURG</span>
+        <span>—</span>
+        <span>KFZ-MEISTERBETRIEB HERR NAWABI</span>
+        <span>—</span>
+        <span>3D-LASER-ACHSVERMESSUNG DIGITAL</span>
       </div>
-    </div>
-  );
-}
-
-export function WatermarkBand({ text = "3D LASER ACHSVERMESSUNG", label = "ТЕХНІЧНИЙ РЕГЛАМЕНТ ЄС" }: { text?: string; label?: string }) {
-  return (
-    <div className="relative w-full py-6 bg-[hsl(215_35%_8%)] border-y border-white/10 overflow-hidden select-none flex items-center justify-between px-6">
-      <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[hsl(24_95%_53%)] relative z-10">
-        {label}
-      </span>
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none select-none aria-hidden">
-        <span className="font-display font-black text-6xl sm:text-8xl tracking-tighter text-white whitespace-nowrap uppercase">
-          {text}
-        </span>
-      </div>
-      <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-white/40 relative z-10">
-        KIELER STR. 207 · HAMBURG
-      </span>
     </div>
   );
 }
 
 export function StatementBand() {
   return (
-    <div className="w-full bg-[hsl(24_95%_53%)] text-white py-4 px-6 text-center select-none shadow-inner">
-      <p className="font-display font-extrabold text-sm sm:text-base uppercase tracking-wider max-w-5xl mx-auto">
-        Збереження офіційної гарантії автовиробника за стандартом ЄС GVO 461/2010 · Фіксована норма-година 89 €
-      </p>
+    <section className="bg-slate-900 border-y border-slate-800 py-12 text-center">
+      <div className="max-w-5xl mx-auto px-4">
+        <span className="text-[10px] font-extrabold uppercase tracking-[0.3em] text-accent block mb-2 font-display">
+          WERKSTATT-PHILOSOPHIE
+        </span>
+        <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight leading-snug">
+          MEISTERQUALITÄT FÜR ALLE MARKEN — SEIT 2015 IN HAMBURG-EIMSBÜTTEL
+        </h3>
+      </div>
+    </section>
+  );
+}
+
+export function HairlineStrip() {
+  return (
+    <div className="py-4 bg-slate-950 border-y border-slate-800/80 text-center text-[10px] font-extrabold uppercase tracking-[0.25em] text-slate-400">
+      HERSTELLERGARANTIE BLEIBT ERHALTEN · 3D-LASER-ACHSVERMESSUNG · PROFI-AUTOREINIGUNG STUDIO · KIELER STR. 207
     </div>
   );
 }

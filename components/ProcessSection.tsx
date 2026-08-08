@@ -1,41 +1,50 @@
 "use client";
 
 import { useLocale } from "@/lib/i18n";
-import { Reveal } from "./motion";
 
 export default function ProcessSection() {
   const { t } = useLocale();
 
-  const steps = (t("process.steps") as Array<{ num: string; title: string; desc: string }>) || [];
+  const kicker = String(t("process.kicker"));
+  const title = String(t("process.title"));
+  const steps = (t("process.steps") as Array<{
+    num: string;
+    title: string;
+    desc: string;
+  }>) || [];
 
   return (
-    <section className="py-20 px-4 sm:px-6 bg-[hsl(215_20%_97%)] text-[hsl(215_30%_14%)]">
-      <div className="max-w-7xl mx-auto">
-        <Reveal className="mb-12 text-center">
-          <span className="text-xs font-bold tracking-widest text-[hsl(24_95%_53%)] uppercase block mb-2">
-            {t("process.kicker") as string}
+    <section className="py-24 bg-slate-950 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-extrabold tracking-widest text-accent uppercase mb-2 block font-display">
+            {kicker}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold max-w-2xl mx-auto leading-tight">
-            {t("process.h2") as string}
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            {title}
           </h2>
-        </Reveal>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {steps.map((st) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          {steps.map((step, idx) => (
             <div
-              key={st.num}
-              className="p-6 rounded-xl bg-white border border-gray-200 hover:border-[hsl(24_95%_53%)] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              key={idx}
+              className="rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between relative shadow-lg"
             >
               <div>
-                <span className="font-display font-extrabold text-4xl text-[hsl(24_95%_53%)] block mb-4">
-                  {st.num}
+                <span className="text-4xl font-black text-accent/40 font-display block mb-4">
+                  {step.num}
                 </span>
-                <h3 className="font-display font-bold text-xl text-[hsl(215_30%_14%)] mb-2">
-                  {st.title}
+                <h3 className="text-base font-extrabold text-white mb-2">
+                  {step.title}
                 </h3>
-                <p className="text-sm text-[hsl(215_15%_45%)] leading-relaxed">
-                  {st.desc}
+                <p className="text-xs text-slate-400 font-body leading-relaxed">
+                  {step.desc}
                 </p>
+              </div>
+
+              <div className="mt-6 pt-3 border-t border-slate-800/80 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                SCHRITT {idx + 1} VON 4
               </div>
             </div>
           ))}

@@ -1,53 +1,18 @@
 {
-  "currency": "EUR",
-  "baseServices": [
-    {
-      "id": "diagnostics",
-      "name": "3D-комп'ютерна діагностика та огляд",
-      "basePrice": 49,
-      "unit": "фіксовано",
-      "description": "Повний скановий звіт електронних блоків + тестування підвіски"
-    },
-    {
-      "id": "inspektion",
-      "name": "Регламентне ТО (Inspektion) за нормами автовиробника",
-      "basePrice": 129,
-      "unit": "від",
-      "description": "Збереження заводської гарантії, заміна оливи, фільтрів та 42 точки перевірки"
-    },
-    {
-      "id": "achsvermessung",
-      "name": "3D-розвал-сходження коліс (Achsvermessung Laser)",
-      "basePrice": 89,
-      "unit": "від",
-      "description": "Високоточне лазерне калібрування геометрії підвіски"
-    },
-    {
-      "id": "hu_au",
-      "name": "Офіційний техогляд HU/AU (TÜV / DEKRA)",
-      "basePrice": 145,
-      "unit": "комплекс",
-      "description": "Підготовка + проходження техогляду прямо в майстерні"
-    },
-    {
-      "id": "klimaservice",
-      "name": "Обслуговування та заправка кондиціонера",
-      "basePrice": 79,
-      "unit": "від",
-      "description": "Тест на витік, заміна фреону, антибактеріальне озонування"
-    },
-    {
-      "id": "detailing",
-      "name": "Глибинне озонування та хімчистка салону",
-      "basePrice": 119,
-      "unit": "від",
-      "description": "Повне видалення застарілих плям, алергенів та запахів тютюну/тварин"
-    }
-  ],
-  "hourlyRate": 89,
+  "currency": "€",
+  "basePrices": {
+    "inspektion": 99,
+    "achsvermessung": 89,
+    "hu_au": 145,
+    "klimaservice": 79,
+    "oil_express": 49,
+    "autoreinigung": 119,
+    "smart_repair": 89,
+    "bremsen_check": 49
+  },
   "vehicleMultipliers": {
-    "compact": 1.0,
-    "sedan": 1.15,
+    "kleinwagen": 1.0,
+    "limousine": 1.15,
     "suv": 1.3,
     "transporter": 1.45
   }

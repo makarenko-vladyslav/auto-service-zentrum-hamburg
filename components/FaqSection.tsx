@@ -2,50 +2,56 @@
 
 import { useState } from "react";
 import { useLocale } from "@/lib/i18n";
-import { Reveal } from "./motion";
 
 export default function FaqSection() {
   const { t } = useLocale();
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
-  const items = (t("faq.items") as Array<{ q: string; a: string }>) || [];
+  const kicker = String(t("faq.kicker"));
+  const title = String(t("faq.title"));
+  const items = (t("faq.items") as Array<{
+    question: string;
+    answer: string;
+  }>) || [];
 
   return (
-    <section id="faq" className="py-20 px-4 sm:px-6 bg-[hsl(215_20%_97%)] text-[hsl(215_30%_14%)]">
-      <div className="max-w-4xl mx-auto">
-        <Reveal className="mb-12 text-center">
-          <span className="text-xs font-bold tracking-widest text-[hsl(24_95%_53%)] uppercase block mb-2">
-            {t("faq.kicker") as string}
+    <section className="py-24 bg-slate-950 border-t border-slate-800">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <span className="text-xs font-extrabold tracking-widest text-accent uppercase mb-2 block font-display">
+            {kicker}
           </span>
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold leading-tight">
-            {t("faq.h2") as string}
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            {title}
           </h2>
-        </Reveal>
+        </div>
 
         <div className="space-y-4">
-          {items.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm transition-all"
-            >
-              <button
-                type="button"
-                onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-                className="w-full p-6 text-left font-display font-bold text-lg text-[hsl(215_30%_14%)] flex justify-between items-center gap-4 focus:outline-none"
+          {items.map((item, idx) => {
+            const isOpen = openIdx === idx;
+            return (
+              <div
+                key={idx}
+                className="rounded-xl bg-slate-900 border border-slate-800 overflow-hidden transition-colors"
               >
-                <span>{item.q}</span>
-                <span className="text-xl text-[hsl(24_95%_53%)] font-extrabold">
-                  {openIdx === idx ? "−" : "+"}
-                </span>
-              </button>
+                <button
+                  onClick={() => setOpenIdx(isOpen ? null : idx)}
+                  className="w-full text-left p-5 flex items-center justify-between text-sm sm:text-base font-extrabold text-white hover:text-accent transition-colors"
+                >
+                  <span>{item.question}</span>
+                  <span className="text-accent text-xl font-mono ml-4 shrink-0">
+                    {isOpen ? "−" : "+"}
+                  </span>
+                </button>
 
-              {openIdx === idx && (
-                <div className="px-6 pb-6 text-sm text-[hsl(215_15%_45%)] leading-relaxed border-t border-gray-100 pt-4">
-                  {item.a}
-                </div>
-              )}
-            </div>
-          ))}
+                {isOpen && (
+                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-300 font-body leading-relaxed border-t border-slate-800/60">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
