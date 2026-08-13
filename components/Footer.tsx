@@ -1,152 +1,151 @@
 "use client";
-
 import { useLocale } from "@/lib/i18n";
 
 export default function Footer() {
   const { t } = useLocale();
 
+  const phone = t("brand.phone") as string;
+  const email = t("brand.email") as string;
+  const address = t("brand.address") as string;
+
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 pt-16 pb-12 text-slate-400 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
-          {/* Brand Info */}
-          <div className="md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent text-slate-950 font-black flex items-center justify-center text-xl">
-                ASZ
-              </div>
-              <span className="font-extrabold text-lg text-white tracking-tight font-display">
-                AUTO SERVICE ZENTRUM
-              </span>
-            </div>
-            <p className="text-xs leading-relaxed text-slate-400 mb-4 font-body">
-              {String(t("footer.meisterbrief"))}
+    <footer className="bg-primary text-white pt-16 pb-12 border-t border-white/10 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
+        
+        {/* Top 4-Column Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          
+          {/* Col 1: Brand & Description */}
+          <div className="space-y-4">
+            <img
+              src="https://aszhh.de/wp-content/uploads/2020/07/ASZ-Logo-1.png"
+              alt="Auto Service Zentrum Hamburg Logo"
+              className="h-9 w-auto object-contain"
+            />
+            <p className="text-xs font-body text-white/70 leading-relaxed">
+              {t("footer.aboutText") as string}
             </p>
-            <span className="text-[11px] text-slate-400 font-bold block uppercase tracking-wider">
-              Leitung: Herr Nawabi · Kieler Str. 207, 22525 Hamburg
-            </span>
           </div>
 
-          {/* Quick Nav */}
-          <div>
-            <span className="text-xs font-extrabold text-white uppercase tracking-wider block mb-4">
-              Navigation
-            </span>
-            <ul className="space-y-2.5 text-xs font-semibold">
+          {/* Col 2: Navigation Links */}
+          <div className="space-y-3">
+            <h4 className="font-display font-bold text-sm text-accent uppercase tracking-wider">
+              {t("footer.linksTitle") as string}
+            </h4>
+            <ul className="space-y-2 text-xs font-display text-white/80">
               <li>
                 <a href="#services" className="hover:text-accent transition-colors">
-                  {String(t("nav.services"))}
+                  {t("nav.services") as string}
                 </a>
               </li>
               <li>
-                <a href="#rechner" className="hover:text-accent transition-colors">
-                  {String(t("nav.calculator"))}
+                <a href="#calculator" className="hover:text-accent transition-colors">
+                  {t("nav.calculator") as string}
                 </a>
               </li>
               <li>
-                <a href="#meister" className="hover:text-accent transition-colors">
-                  {String(t("nav.meister"))}
+                <a href="#before-after" className="hover:text-accent transition-colors">
+                  {t("nav.beforeAfter") as string}
                 </a>
               </li>
               <li>
-                <a href="#detailing" className="hover:text-accent transition-colors">
-                  {String(t("nav.detailing"))}
+                <a href="#advantages" className="hover:text-accent transition-colors">
+                  {t("nav.advantages") as string}
                 </a>
               </li>
               <li>
-                <a href="#bewertungen" className="hover:text-accent transition-colors">
-                  {String(t("nav.reviews"))}
+                <a href="#testimonials" className="hover:text-accent transition-colors">
+                  {t("nav.testimonials") as string}
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-accent transition-colors">
+                  {t("nav.faq") as string}
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact Details */}
-          <div>
-            <span className="text-xs font-extrabold text-white uppercase tracking-wider block mb-4">
-              Kontakt
-            </span>
-            <ul className="space-y-2 text-xs">
-              <li className="text-slate-300">Kieler Straße 207</li>
-              <li className="text-slate-300">22525 Hamburg-Eimsbüttel</li>
-              <li className="pt-1">
-                <a href="tel:+49405401050" className="text-slate-300 hover:text-accent font-bold">
-                  Tel: 040 540 10 50
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/491724715522"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald-400 font-bold hover:underline"
-                >
-                  WhatsApp: +49 172 471 55 22
-                </a>
-              </li>
-              <li>
-                <span className="text-slate-400">Email: info@aszhh.de</span>
-              </li>
-            </ul>
+          {/* Col 3: Hours & Separate Contact Lines */}
+          <div className="space-y-3">
+            <h4 className="font-display font-bold text-sm text-accent uppercase tracking-wider">
+              {t("footer.hoursTitle") as string}
+            </h4>
+            <div className="text-xs font-body text-white/80 space-y-1.5">
+              <p>Montag - Freitag: 08:00 - 18:00</p>
+              <p>Samstag: Nach Vereinbarung</p>
+              <div className="pt-2 space-y-1">
+                <p className="font-display font-bold text-white">{phone}</p>
+                <p className="text-white/70">{email}</p>
+                <p className="text-white/70">{address}</p>
+              </div>
+            </div>
           </div>
 
-          {/* Hours & Direct Links */}
-          <div>
-            <span className="text-xs font-extrabold text-white uppercase tracking-wider block mb-4">
-              Öffnungszeiten & Direktlinks
-            </span>
-            <p className="text-xs text-slate-300 leading-relaxed mb-4">
-              Montag – Freitag: 08:00 – 18:00 Uhr<br />
-              Samstag: Nach Vereinbarung
-            </p>
+          {/* Col 4: Certifications & Text Social Links */}
+          <div className="space-y-3">
+            <h4 className="font-display font-bold text-sm text-accent uppercase tracking-wider">
+              Zertifizierung & Medien
+            </h4>
+            <div className="text-xs font-body text-white/70 space-y-2">
+              <p>✔ KFZ-Meisterbetrieb Handwerkskammer HH</p>
+              <p>✔ Offizieller Partner von reifen.com</p>
+              <p>✔ TÜV / DEKRA Prüfstützpunkt</p>
+            </div>
+            
+            {/* Text Social Row */}
+            <div className="pt-2 flex items-center gap-3 text-xs font-display font-bold text-accent uppercase tracking-wider">
+              <a href="https://wa.me/4917643210987" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                WhatsApp
+              </a>
+              <span>·</span>
+              <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Google My Business
+              </a>
+            </div>
+          </div>
 
-            <div className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider">
+        </div>
+
+        {/* Giant Full-Width Brand Wordmark Bleeding off Bottom Edge */}
+        <div className="pt-8 border-t border-white/10 text-center select-none pointer-events-none">
+          <span className="text-5xl sm:text-8xl lg:text-[10rem] font-display font-black tracking-tighter text-white/5 uppercase block leading-none">
+            ASZ HAMBURG
+          </span>
+        </div>
+
+        {/* Legal & Developer Credit Row in Brand Voice */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-body text-white/60 pt-4 border-t border-white/10">
+          <div>
+            © 2026 Auto Service Zentrum Hamburg. {t("footer.rights") as string}
+          </div>
+
+          <div className="flex items-center gap-4 flex-wrap justify-center">
+            <span className="text-white/40 italic">
+              KFZ-Meisterqualität in Hamburg-Stellingen
+            </span>
+            <span>•</span>
+            <a href="#" className="hover:text-white transition-colors">
+              {t("footer.impressum") as string}
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              {t("footer.datenschutz") as string}
+            </a>
+            <span>•</span>
+            <div>
+              {t("footer.developerCredit") as string}{" "}
               <a
-                href="https://wa.me/491724715522"
+                href="https://makarich.framer.website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-emerald-400 hover:underline"
+                className="text-accent hover:underline font-bold"
               >
-                WhatsApp Direct
+                Студія Тест
               </a>
-              <a
-                href="https://maps.google.com/?q=Kieler+Straße+207+Hamburg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline"
-              >
-                Google Maps Anfahrt
-              </a>
-              <span className="text-slate-400">reifen.com Montagepartner</span>
             </div>
           </div>
         </div>
 
-        {/* Legal & Developer Credit */}
-        <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-medium">
-          <div>{String(t("footer.rights"))}</div>
-
-          <div>
-            <a
-              href="https://makarich.framer.website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-accent transition-colors"
-            >
-              Entwickelt von Студія Тест — Студія розробки преміальних сайтів
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Giant Full-Width Bleeding Brand Wordmark */}
-      <div
-        className="w-full overflow-hidden pointer-events-none select-none text-center pt-8 opacity-[0.03]"
-        aria-hidden="true"
-      >
-        <span className="text-[11vw] font-black tracking-tighter text-slate-100 uppercase font-display leading-none whitespace-nowrap block">
-          AUTO SERVICE ZENTRUM HAMBURG
-        </span>
       </div>
     </footer>
   );

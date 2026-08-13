@@ -1,27 +1,26 @@
 "use client";
-
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
 import content from '@/lib/content.json';
 
-type LocaleContextType = {
+const LocaleContext = createContext<{
   locale: string;
   setLocale: (l: string) => void;
   t: (path: string) => unknown;
-};
-
-const LocaleContext = createContext<LocaleContextType>({
+}>({
   locale: content.defaultLocale,
   setLocale: () => {},
-  t: (path: string) => path,
+  t: () => '',
 });
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('locale') || content.defaultLocale;
+  const [locale, setLocaleState] = useState(content.defaultLocale);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('locale');
+    if (saved && saved !== content.defaultLocale && saved in content.locales) {
+      setLocaleState(saved);
     }
-    return content.defaultLocale;
-  });
+  }, []);
 
   const setLocale = useCallback((l: string) => {
     setLocaleState(l);
@@ -33,8 +32,8 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   const t = useCallback((path: string): unknown => {
     const keys = path.split('.');
     const locales = content.locales as Record<string, Record<string, unknown>>;
-    
     let val: unknown = locales[locale];
+    
     for (const k of keys) {
       if (val && typeof val === 'object' && k in (val as Record<string, unknown>)) {
         val = (val as Record<string, unknown>)[k];
@@ -45,7 +44,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     }
     
     if (val !== undefined) return val;
-    
+
     // Fallback to default locale
     val = locales[content.defaultLocale];
     for (const k of keys) {
@@ -56,7 +55,6 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
         break;
       }
     }
-    
     return val ?? path;
   }, [locale]);
 

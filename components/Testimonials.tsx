@@ -1,126 +1,102 @@
 "use client";
-
-import { useState } from "react";
 import { useLocale } from "@/lib/i18n";
+import { Reveal, Carousel } from "@/components/motion";
+
+interface Testimonial {
+  quote: string;
+  author: string;
+  history: string;
+  rating: number;
+  tag: string;
+}
 
 export default function Testimonials() {
   const { t } = useLocale();
-  const [activeIdx, setActiveIdx] = useState(0);
-
-  const kicker = String(t("testimonials.kicker"));
-  const title = String(t("testimonials.title"));
-  const subtitle = String(t("testimonials.subtitle"));
-  const items = (t("testimonials.items") as Array<{
-    quote: string;
-    author: string;
-    role: string;
-  }>) || [];
+  const items = t("testimonials.items") as Testimonial[];
 
   return (
-    <section id="bewertungen" className="py-24 bg-slate-900 border-t border-slate-800 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold tracking-widest text-accent uppercase mb-2 block font-display">
-            {kicker}
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-3">
-            {title}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base font-body">
-            {subtitle}
-          </p>
-
-          <div className="mt-4 inline-block px-4 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-extrabold text-amber-300 uppercase tracking-widest">
-            4.8 von 5 · Google Kundenzufriedenheit · 250+ Verifizierte Bewertungen
-          </div>
+    <section id="testimonials" className="py-20 bg-bg-secondary relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="max-w-3xl mb-12 text-left">
+          <Reveal>
+            <span className="text-xs font-display font-bold tracking-widest text-accent uppercase block mb-2">
+              {t("testimonials.kicker") as string}
+            </span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-primary">
+              {t("testimonials.heading") as string}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <p className="mt-4 text-base sm:text-lg text-text-muted font-body">
+              {t("testimonials.subheading") as string}
+            </p>
+          </Reveal>
         </div>
 
-        {/* Featured Big Display Quote */}
-        {items.length > 0 && (
-          <div className="bg-slate-950 rounded-2xl border border-slate-800 p-8 sm:p-12 mb-12 relative overflow-hidden shadow-2xl">
-            <span
-              className="absolute top-2 left-6 text-8xl font-black text-slate-800/40 select-none pointer-events-none font-display"
-              aria-hidden="true"
-            >
+        {/* Main Display Quote with Oversized Quotation Mark */}
+        <Reveal delay={0.25}>
+          <div className="mb-12 bg-primary text-white p-8 sm:p-12 rounded-2xl shadow-xl relative overflow-hidden">
+            <span className="absolute -top-4 -left-2 text-white/10 text-9xl font-display font-black select-none pointer-events-none">
               “
             </span>
-
-            <div className="relative z-10 max-w-4xl">
-              <p className="text-lg sm:text-2xl font-body italic text-slate-100 leading-relaxed mb-6">
-                «{items[activeIdx].quote}»
+            <div className="relative z-10 max-w-3xl space-y-4">
+              <p className="text-xl sm:text-2xl font-body italic text-white/95 leading-relaxed">
+                «{t("testimonials.featuredQuote") as string}»
               </p>
-
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-slate-800 pt-6">
+              <div className="pt-4 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div>
-                  <span className="text-base font-extrabold text-white block">
-                    {items[activeIdx].author}
-                  </span>
-                  <span className="text-xs text-slate-400 uppercase tracking-wider block">
-                    {items[activeIdx].role} — Stammkunde seit 2021
-                  </span>
+                  <div className="font-display font-bold text-base text-accent">
+                    {t("testimonials.featuredAuthor") as string}
+                  </div>
+                  <div className="text-xs text-white/70 font-body">
+                    {t("testimonials.featuredDescriptor") as string}
+                  </div>
                 </div>
-
-                <div className="text-xs font-extrabold text-accent uppercase tracking-widest bg-slate-900 px-3 py-1.5 rounded border border-slate-800">
-                  5.0 / 5.0 Google Rating
+                <div className="text-xs font-display font-bold text-white/80 bg-white/10 px-3 py-1 rounded-full w-fit">
+                  4.8/5 · Google · 150+ Bewertungen
                 </div>
               </div>
             </div>
           </div>
-        )}
+        </Reveal>
 
-        {/* Carousel Dot Indicators (NO ARROW BUTTONS!) */}
-        <div className="flex justify-center items-center gap-2 mb-10">
-          {items.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setActiveIdx(idx)}
-              aria-label={`Bewertung ${idx + 1} anzeigen`}
-              className={`h-2.5 rounded-full transition-all ${
-                activeIdx === idx
-                  ? "w-8 bg-accent"
-                  : "w-2.5 bg-slate-800 hover:bg-slate-700"
-              }`}
-            />
-          ))}
-        </div>
+        {/* Testimonials Carousel (Dots + Touch Swipe Only) */}
+        <Reveal delay={0.3}>
+          <div className="max-w-4xl mx-auto">
+            <Carousel>
+              {items.map((item, idx) => (
+                <div key={idx} className="p-2">
+                  <div className="bg-bg-card border border-border-subtle p-8 sm:p-10 rounded-xl shadow-xs text-center space-y-6">
+                    <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent font-display font-bold text-xs uppercase tracking-wider">
+                      {item.tag}
+                    </div>
 
-        {/* Compact Review Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {items.slice(0, 3).map((item, idx) => (
-            <div
-              key={idx}
-              onClick={() => setActiveIdx(idx)}
-              className={`cursor-pointer rounded-2xl bg-slate-950 border p-6 flex flex-col justify-between transition-all ${
-                activeIdx === idx
-                  ? "border-accent shadow-xl scale-[1.01]"
-                  : "border-slate-800 hover:border-slate-700"
-              }`}
-            >
-              <div>
-                <div className="text-xs font-extrabold text-amber-400 mb-3 uppercase tracking-widest">
-                  BEWERTUNG 5.0 / 5.0
+                    <p className="text-base sm:text-lg font-body text-primary italic leading-relaxed max-w-2xl mx-auto">
+                      «{item.quote}»
+                    </p>
+
+                    <div className="space-y-1">
+                      <div className="text-yellow-500 text-sm font-display font-bold">
+                        5.0 ★★★★★
+                      </div>
+                      <div className="font-display font-bold text-base text-primary">
+                        {item.author}
+                      </div>
+                      <div className="text-xs text-text-muted font-body">
+                        {item.history} · Verifizierte Google Bewertung
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-xs text-slate-300 italic font-body leading-relaxed mb-6 line-clamp-4">
-                  «{item.quote}»
-                </p>
-              </div>
+              ))}
+            </Carousel>
+          </div>
+        </Reveal>
 
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                <div>
-                  <span className="text-xs font-bold text-white block">
-                    {item.author}
-                  </span>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
-                    {item.role}
-                  </span>
-                </div>
-                <span className="text-[10px] bg-slate-900 text-slate-300 px-2.5 py-1 rounded font-mono font-bold">
-                  Google
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

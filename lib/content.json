@@ -2,523 +2,719 @@
   "defaultLocale": "de",
   "locales": {
     "de": {
-      "meta": {
-        "title": "Auto Service Zentrum Hamburg | KFZ-Meisterbetrieb",
-        "description": "Zertifizierter KFZ-Meisterbetrieb in Hamburg Eimsbüttel. Inspektion, 3D-Achsvermessung, HU/AU & Profi-Autoreinigung ab 49 €.",
-        "lang": "de"
+      "brand": {
+        "name": "Auto Service Zentrum Hamburg",
+        "tagline": "KFZ-Meisterbetrieb & Profi-Autoreinigung",
+        "city": "Hamburg",
+        "address": "Kieler Straße 207, 22525 Hamburg-Stellingen",
+        "phone": "+49 40 853 732 10",
+        "whatsapp": "+49 176 432 109 87",
+        "email": "info@aszhh.de",
+        "hours": "Mo - Fr: 08:00 - 18:00 | Sa: Nach Vereinbarung"
       },
       "nav": {
         "services": "Leistungen",
         "calculator": "Kostenrechner",
-        "meister": "Meistergarantie",
-        "detailing": "Autoreinigung",
-        "reviews": "Bewertungen",
-        "gallery": "Werkstatt-Fotos",
+        "beforeAfter": "Smart Repair",
+        "advantages": "Vorteile",
+        "testimonials": "Bewertungen",
+        "faq": "FAQ",
         "contact": "Kontakt & Anfahrt",
-        "cta": "Termin via WhatsApp"
+        "bookAppointment": "Termin via WhatsApp"
       },
       "hero": {
-        "kicker": "Zertifizierter KFZ-Meisterbetrieb · Hamburg Eimsbüttel",
-        "titlePart1": "Präzision in Meisterhand.",
-        "titlePart2": "Transparenter Service für alle Marken.",
-        "subtitle": "Von der hochpräzisen 3D-Laser-Achsvermessung und Inspektion nach Herstellervorgabe bis zur tiefenreinen Fahrzeugaufbereitung. Direkt an der Kieler Straße 207.",
-        "ctaPrimary": "Termin per WhatsApp vereinbaren",
-        "ctaSecondary": "Service & Preise berechnen",
-        "priceTag": "Angebote ab 49 €",
-        "badgeText": "4.8 ★ Google Rating · Meisterbetrieb Nawabi"
+        "kicker": "Est. 2015 · Kieler Straße 207 · Hamburg-Stellingen",
+        "title": "Präzisions-Service & Werkstatt-Qualität für alle",
+        "titleAccent": "Fabrikate.",
+        "subtitle": "Herstellergarantie bleibt zu 100% erhalten. Transparente Festpreise, Meister-Diagnose und direkter WhatsApp-Kostenvoranschlag ohne versteckte Kosten.",
+        "ctaPrimary": "Jetzt Termin anfragen",
+        "ctaSecondary": "WhatsApp Direkt-Check",
+        "mediaType": "video",
+        "videoSrc": "https://videos.pexels.com/video-files/18101981/18101981-hd_1280_720_30fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/18101981/pexels-photo-18101981.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "badge1": "KFZ-Meisterbetrieb seit 2015",
+        "badge2": "Offizieller reifen.com Partner",
+        "badge3": "4.8★ Google Sterne-Bewertung",
+        "flankLeft": "Digitaler Serviceheft-Eintrag & lückenlose Garantie",
+        "flankRight": "WhatsApp-Fotoanalyse in unter 30 Minuten",
+        "sealText": "ZERTIFIZIERTER KFZ MEISTERBETRIEB · HAMBURG STELLINGEN · "
       },
-      "stats": [
-        { "number": "100%", "label": "Herstellergarantie bleibt erhalten" },
-        { "number": "3D Laser", "label": "Neueste Achsvermessungstechnologie" },
-        { "number": "4.8 / 5", "label": "Google Kundenzufriedenheit" },
-        { "number": "Est. 2015", "label": "Jahre Meisterkompetenz in Hamburg" }
-      ],
+      "socialProof": {
+        "kicker": "ZERTIFIKATE & VERMITTLUNGSPARTNER",
+        "items": [
+          "KFZ-MEISTERBETRIEB HANDWERKSKAMMER",
+          "TÜV & DEKRA PRÜFSTÜTZPUNKT",
+          "OFFIZIELLER REIFEN.COM PARTNER",
+          "PROFI-AUTOREINIGUNG SPEZIALABTEILUNG",
+          "3D-LASER ACHSVERMESSUNG ZENTRUM",
+          "4.8 GOOGLE BEWERTUNG · HERR NAWABI"
+        ]
+      },
+      "advantages": {
+        "kicker": "WERKSTATT-STANDARDS",
+        "heading": "Sicherheit, Garantierhalt und volle Preistransparenz.",
+        "subheading": "In unserer Meisterwerkstatt an der Kieler Straße betreuen wir Ihr Fahrzeug nach exakten Herstellervorgaben — ohne unfaire Überraschungen auf der Rechnung.",
+        "quote": "Transparenz ist unser Werkzeug: Jedes ersetzte Teil wird dokumentiert und auf Wunsch bei der Fahrzeugübergabe vorgeführt.",
+        "quoteAuthor": "Herr Nawabi — KFZ-Meister & Werkstattleitung",
+        "cards": [
+          {
+            "num": "01",
+            "title": "100% Herstellergarantie",
+            "text": "Durch unseren offiziellen Status als KFZ-Meisterbetrieb bleiben sämtliche Garantieansprüche Ihres Neu- oder Leasingwagens lückenlos erhalten."
+          },
+          {
+            "num": "02",
+            "title": "WhatsApp Video-Kostenvoranschlag",
+            "text": "Bevor wir ein Bauteil austauschen, erhalten Sie ein klares Video oder Foto via WhatsApp zur sofortigen Freigabe. Keine unangekündigten Kosten."
+          },
+          {
+            "num": "03",
+            "title": "Oil-Express & Direkt-Service",
+            "text": "Kleine Wartungsarbeiten wie Ölwechsel mit Markenölen erledigen wir ohne tagelange Standzeiten auf unserer Schnell-Linie."
+          },
+          {
+            "num": "04",
+            "title": "Inhouse Profi-Autoreinigung",
+            "text": "Eigene Spezialabteilung für Tiefenreinigung, Ozon-Geruchsentfernung, Dellenbeseitigung und Lackpolitur vor Leasingrückgabe."
+          }
+        ],
+        "stats": [
+          { "value": "15+", "label": "Jahre Meistererfahrung" },
+          { "value": "100%", "label": "Garantieerhalt" },
+          { "value": "150+", "label": "Google Bewertungen" },
+          { "value": "0 €", "label": "Versteckte Kosten" }
+        ]
+      },
       "services": {
-        "kicker": "KFZ-Meisterwerkstatt & Profi-Studio",
-        "title": "Unsere Kernleistungen für Ihr Fahrzeug",
-        "subtitle": "Alle Reparaturen werden streng nach Herstellervorgaben durchgeführt — mit Erhalt Ihrer vollen Werksgarantie.",
-        "categories": ["Alle Leistungen", "Inspektion & Wartung", "Fahrwerk & Bremsen", "Profi-Autoreinigung"],
+        "kicker": "MEISTER-SERVICE & PREISLISTE",
+        "heading": "Garantierte Festpreise für Ihr Fahrzeug.",
+        "subheading": "Von der präzisen Elektronik-Diagnose über zertifizierten TÜV-Service bis hin zum Smart Repair — alle Arbeiten nach Herstellervorgabe.",
+        "categories": ["Alle Leistungen", "Reparatur & Wartung", "Inspektion & Öl", "Smart Repair & Lack", "Achsvermessung & Reifen", "Profi-Autoreinigung"],
+        "footnote": "* Sämtliche Orientierungspreise inkl. 19% MwSt. Endgültiges Angebot nach Meister-Sichtprüfung oder WhatsApp-Fotoanalyse.",
         "items": [
           {
-            "id": "inspektion",
-            "category": "Inspektion & Wartung",
-            "title": "Inspektion nach Herstellervorgabe",
-            "description": "Lückenloser Serviceeintrag für das digitale Serviceheft. Vollständige Überprüfung aller sicherheitsrelevanten Baugruppen.",
-            "price": "ab 99 €",
-            "badge": "Garantieerhalt"
+            "category": "Reparatur & Wartung",
+            "title": "KFZ Reparatur aller Fabrikate",
+            "price": "ab 69 €",
+            "tag": "DIAGNOSE-EXPERTEN",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg",
+            "desc": "Instandsetzung von Motor, Getriebe, Abgasanlage und Elektrik mit modernster Werkstattdiagnose."
           },
           {
-            "id": "achsvermessung",
-            "category": "Fahrwerk & Bremsen",
-            "title": "3D-Laser-Achsvermessung",
-            "description": "Präzises Vermessen der Fahrwerksgeometrie per 3D-Laser. Verhindert einseitigen Reifenverschleiß und sichert perfekte Spurtreue.",
+            "category": "Inspektion & Öl",
+            "title": "Hersteller-Inspektion nach Wartungsplan",
+            "price": "ab 129 €",
+            "tag": "HERSTELLER-GARANTIE",
+            "highlight": true,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg",
+            "desc": "Sorgfältige Durchsicht mit lückenlosem Eintrag ins digitale Serviceheft des Herstellers."
+          },
+          {
+            "category": "Inspektion & Öl",
+            "title": "Oil-Express Markenöl-Service",
+            "price": "ab 49 €",
+            "tag": "EXPRESS-LINIE",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg",
+            "desc": "Schneller Wechsel von Motoröl und Filter mit zertifizierten Markenölen ohne lange Wartezeiten."
+          },
+          {
+            "category": "Smart Repair & Lack",
+            "title": "Smart Repair & Dellenbeseitigung",
             "price": "ab 89 €",
-            "badge": "High-Tech 3D"
+            "tag": "SPAR-TIPP (-70%)",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11987160_487026658133162_2622021430123409528_n-400x400.jpg",
+            "desc": "Punktgenaue Ausbesserung von Parkdellen und Kratzern ohne teuren Teileaustausch."
           },
           {
-            "id": "hu_au",
-            "category": "Inspektion & Wartung",
-            "title": "HU & AU Service (Tech-Check)",
-            "description": "Gründliche Vorabprüfung und Reifung Ihres Fahrzeugs zur reibungslosen Haupt- und Abgasuntersuchung direkt im Haus.",
+            "category": "Reparatur & Wartung",
+            "title": "Haupt- & Abgasuntersuchung (HU/AU)",
             "price": "ab 145 €",
-            "badge": "TÜV-Bereit"
+            "tag": "TÜV / DEKRA",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/20637921_824980174337807_2684391906527486961_n-400x400.jpg",
+            "desc": "Meisterlicher Vorab-Check und tägliche Abnahme durch amtliche Prüfer im Haus."
           },
           {
-            "id": "autoreinigung",
-            "category": "Profi-Autoreinigung",
-            "title": "Profi-Autoreinigung & Ozonbehandlung",
-            "description": "Tiefenhygiene im Innenraum, Sitzledersanierung und dauerhafte Geruchsbeseitigung durch hocheffektives Ozonverfahren.",
-            "price": "ab 119 €",
-            "badge": "Profi Studio"
-          },
-          {
-            "id": "klimaservice",
-            "category": "Inspektion & Wartung",
-            "title": "ASZ Klimaservice inkl. Lecksuche",
-            "description": "Kältemittel-Absaugung, Evakuierung, Dichtigkeitsprüfung und Neubefüllung für eiskalte Leistung und frische Luft.",
+            "category": "Achsvermessung & Reifen",
+            "title": "3D-Laser Achsvermessung",
             "price": "ab 79 €",
-            "badge": "Sommer & Winter"
+            "tag": "HIGH-TECH LASER",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg",
+            "desc": "Hochpräzise Fahrwerksjustierung zur Verhinderung ungleichmäßigen Reifenverschleißes."
           },
           {
-            "id": "bremsen",
-            "category": "Fahrwerk & Bremsen",
-            "title": "Bremsenservice & Scheibenaustausch",
-            "description": "Fachgerechter Wechsel von Bremsbelägen, Bremsscheiben und Bremsflüssigkeit mit Erstausrüsterkomponenten.",
-            "price": "ab 49 €",
-            "badge": "Sicherheitsrelevant"
-          },
-          {
-            "id": "smart_repair",
             "category": "Profi-Autoreinigung",
-            "title": "Smart Repair & Dellenentfernung",
-            "description": "Kostengünstige Beseitigung von Parkdellen, Kratzern und Lackschäden ohne teuren Austausch von Baugruppen.",
-            "price": "ab 89 €",
-            "badge": "Leasing-Tipp"
+            "title": "Profi-Autoreinigung & Ozon-Behandlung",
+            "price": "ab 99 €",
+            "tag": "TIEFENREINIGUNG",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg",
+            "desc": "Porentiefe Polsterreinigung und Ozon-Desinfektion zur Geruchsentfernung."
           },
           {
-            "id": "oil_express",
-            "category": "Inspektion & Wartung",
-            "title": "Oil-Express Service",
-            "description": "Mittelpunktnaher Ölwechsel mit Markenöl nach Herstellerspezifikation inklusive neuem Ölfilter und Altölentsorgung.",
-            "price": "ab 49 €",
-            "badge": "Express"
+            "category": "Smart Repair & Lack",
+            "title": "Leasing-Rückgabe Aufbereitung",
+            "price": "ab 199 €",
+            "tag": "SCHUTZ VOR STRAFE",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg",
+            "desc": "Gezielte Mängelbeseitigung nach Herstellernorm vor der Rückgabe an die Leasinggesellschaft."
           }
         ]
       },
       "calculator": {
-        "kicker": "Transparenz vor dem Werkstattbesuch",
-        "title": "Interaktiver Kosten-Schätzer",
-        "subtitle": "Wählen Sie Ihren Fahrzeugtyp und gewünschte Leistungen für eine unverbindliche Orientierung an.",
-        "selectVehicle": "1. Fahrzeugkategorie wählen",
-        "vehicles": [
-          { "id": "kleinwagen", "label": "Kleinwagen / Kompakt" },
-          { "id": "limousine", "label": "Kombi / Limousine" },
-          { "id": "suv", "label": "SUV / Crossover" },
-          { "id": "transporter", "label": "Transporter / Van" }
-        ],
-        "selectServices": "2. Gewünschte Leistungen wählen",
-        "estimateTitle": "Geschätzter Richtpreis:",
-        "disclaimer": "Endgültiger Festpreis nach kurzer Sichtprüfung vor Ort. Keine versteckten Zusatzkosten.",
-        "bookWhatsapp": "Kostenvoranschlag via WhatsApp senden"
+        "kicker": "TRANSPARENTER KOSTENRECHNER",
+        "heading": "Ermitteln Sie Ihre geschätzten Servicekosten.",
+        "subheading": "Wählen Sie die gewünschte Hauptleistung und Ihre Fahrzeugklasse für einen unverbindlichen Orientierungspreis.",
+        "selectService": "Gewünschte Hauptleistung",
+        "selectVehicle": "Fahrzeugklasse",
+        "selectAddons": "Optionale Zusatzleistungen",
+        "estimatedTotal": "Geschätzter Festpreis",
+        "disclaimer": "Endgültiges Angebot erfolgt nach Meister-Prüfung oder WhatsApp-Fotoübermittlung.",
+        "btnRequest": "Diesen Richtpreis per WhatsApp bestätigen"
       },
-      "techFeature": {
-        "kicker": "Präzisionstechnologie",
-        "title": "3D-Laser-Achsvermessung der neuesten Generation",
-        "subtitle": "Schon minimale Abweichungen im Fahrwerk führen zu ungleichem Reifenverschleiß und erhöhtem Kraftstoffverbrauch.",
-        "points": [
-          "Digitale Erfassung aller Spur- und Sturzwerte in wenigen Sekunden",
-          "Schonung teurer Sommer- und Winterreifen vor einseitigem Abrieb",
-          "Erhöhte Fahrstabilität und kürzere Bremswege auf nasser Fahrbahn",
-          "Empfohlen nach jedem Bordsteinkontakt oder Stoßdämpferwechsel"
-        ]
+      "beforeAfter": {
+        "kicker": "SMART REPAIR EXZELLENZ",
+        "heading": "Gegenüberstellung: Vorher vs. Nachher",
+        "subheading": "Schaden an der hinteren Kotflügelkante fachgerecht ausgebeult, geschliffen, nahtlos beilackiert und versiegelt — ohne teuren Karosserietausch.",
+        "beforeLabel": "VORHER: Beschädigter Kotflügel",
+        "afterLabel": "NACHHER: Makelloses Finish",
+        "beforeImg": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg",
+        "afterImg": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
       },
-      "detailingFeature": {
-        "kicker": "Profi-Autoreinigung Studio",
-        "title": "Makelloser Innenraum & Geruchsneutralisierung",
-        "subtitle": "Eigene Spezialabteilung für tiefenwirksame Polsterreinigung, Lederpflege und Leasing-Rückgabe-Aufbereitung.",
-        "points": [
-          "Medizinische Ozonbehandlung: Beseitigt Tier-, Rauch- und Feuchtigkeitsgerüche nachhaltig",
-          "Tiefenshampoo für Stoffsitze und sanfte Lederkonservierung",
-          "Leasing-Rückgabe-Pflege: Vermeidet hohe Nachzahlungen beim Vertragshändler"
-        ]
+      "videoShowcase": {
+        "kicker": "MODERNE AUSSTATTUNG IN AKTION",
+        "heading": "Präzision auf dem Werkstattprüfstand.",
+        "subheading": "Erleben Sie unsere Spezialgeräte für Fahrwerksvermessung, Bremsprüfstand und Motordiagnose an der Kieler Straße.",
+        "videoSrc": "https://videos.pexels.com/video-files/6442794/6442794-hd_1280_720_24fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/6442794/pexels-photo-6442794.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "stat1": "100%",
+        "stat1Label": "Prüfstand-Präzision",
+        "stat2": "10+",
+        "stat2Label": "Jahre Meistererfahrung",
+        "stat3": "0 €",
+        "stat3Label": "Unerwartete Aufpreise"
       },
-      "trust": {
-        "kicker": "Inhabergeführte Meisterqualität",
-        "title": "Warum Autobesitzer in Hamburg auf ASZ vertrauen",
-        "subtitle": "Unter der fachmännischen Leitung von KFZ-Meister Herr Nawabi kombinieren wir modernste Werkstattdiagnostik mit ehrlicher Beratung.",
-        "cards": [
+      "process": {
+        "kicker": "TRANSPARENTER ABLAUF",
+        "heading": "In 4 einfachen Schritten zur sicheren Fahrt.",
+        "subheading": "Keine Unklarheiten, keine bürokratischen Hürden — so unkompliziert ist der Service bei Auto Service Zentrum Hamburg.",
+        "steps": [
           {
-            "title": "KFZ-Meisterbetrieb",
-            "desc": "Zertifiziertes Fachwissen, fortlaufend geschulte Techniker und persönlicher Ansprechpartner."
+            "num": "01",
+            "title": "Anfrage & Erst-Analyse",
+            "time": "Ca. 10 Min.",
+            "text": "Senden Sie uns Ihr Anliegen bequem per WhatsApp-Foto oder Buchungsformular. Wir prüfen die Symptome sofort."
           },
           {
-            "title": "100% Werksgarantie",
-            "desc": "Wartungsarbeiten streng nach Herstellervorgaben mit voll digitaler Serviceheft-Eintragung."
+            "num": "02",
+            "title": "Meister-Kostenvoranschlag",
+            "time": "Unter 30 Min.",
+            "text": "Herr Nawabi oder ein Werkstattmeister erstellt ein klares Festpreisangebot mit allen benötigten Marken-Ersatzteilen."
           },
           {
-            "title": "reifen.com Partner",
-            "desc": "Offizieller Montagepartner für Reifenbestellungen und professionellen Reifenservice."
+            "num": "03",
+            "title": "Fachgerechte Ausführung",
+            "time": "Termingerecht",
+            "text": "Sorgfältige Reparatur oder Wartung auf unseren modernen Hebebühnen nach exakten Herstellervorgaben."
           },
           {
-            "title": "Faire Festpreise",
-            "desc": "Keine unangekündigten Reparaturen. Jedes Detail wird vorab transparent abgesprochen."
+            "num": "04",
+            "title": "Übergabe & Dokumentation",
+            "time": "Bei Abholung",
+            "text": "Persönliche Erläuterung aller durchgeführten Arbeiten, Eintrag ins Serviceheft und Fahrbereitschaft ohne Zeitverzug."
           }
         ]
       },
-      "process": {
-        "kicker": "Einfach & Unkompliziert",
-        "title": "In 4 Schritten zu Ihrem reparierten Fahrzeug",
-        "steps": [
-          { "num": "01", "title": "Anfrage senden", "desc": "Kurze WhatsApp-Nachricht oder Online-Formular mit Ihrem Anliegen." },
-          { "num": "02", "title": "Meister-Diagnose", "desc": "Kurze Durchsicht auf der Hebebühne und klarer Kostenvoranschlag." },
-          { "num": "03", "title": "Fachgerechte Reparatur", "desc": "Verwendung von Erstausrüster-Ersatzteilen und modernstem Werkzeug." },
-          { "num": "04", "title": "Pünktliche Übergabe", "desc": "Schlüsselübergabe mit detaillierter Erläuterung aller durchgeführten Arbeiten." }
-        ]
-      },
       "testimonials": {
-        "kicker": "Echte Kundenstimmen",
-        "title": "Das sagen Hamburger Autofahrer über uns",
-        "subtitle": "Über 250 positive Google-Bewertungen mit durchschnittlich 4.8 Sternen.",
+        "kicker": "VERIFIZIERTE ERFAHRUNGEN",
+        "heading": "Das sagen Hamburger Autofahrer über uns.",
+        "subheading": "4.8 Sterne bei über 150 verifizierten Bewertungen auf Google My Business.",
+        "featuredQuote": "Sehr kompetent, hilfsbereit und freundlich. In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten.",
+        "featuredAuthor": "Olaf Schaelke",
+        "featuredDescriptor": "Stammkunde aus Hamburg-Stellingen seit 2019",
         "items": [
           {
             "quote": "Sehr kompetent, Hilfsbereit und freundlich. In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten. Gerne wieder, bis zum nächsten mal.",
             "author": "Olaf Schaelke",
-            "role": "Verifizierte Google Bewertung"
+            "history": "Kunde seit 2019",
+            "rating": 5,
+            "tag": "Verifizierter Stammkunde"
           },
           {
-            "quote": "Megastarke Leistung – trotz hartnäckiger Gerüche in einem Sportsitz hat sich das Team ASZ HH durchgebissen und einen tadellosen Job gemacht. Geruch weg, optisch perfekt, mehr kann man nicht wollen. JEDERZEIT WIEDER!",
+            "quote": "Megastarke Leistung – trotz hartnäckiger Gerüche in einem Sportsitz hat sich das Team ASZ HH durchgebissen und einen tadellosen Job gemacht. Geruch weg, optisch perfekt, mehr kann man nicht wollen.",
             "author": "Jan Sass",
-            "role": "Verifizierte Google Bewertung"
-          },
-          {
-            "quote": "Absolut kompetentes und nettes Team! Es gibt kein Problem, was hier nicht gelöst werden kann. Super Service, klasse Beratung und absolut saubere Arbeit. Ich bin sehr froh, diese tolle Werkstatt gefunden zu haben!",
-            "author": "Katie Mueller",
-            "role": "Verifizierte Google Bewertung"
-          },
-          {
-            "quote": "Sehr gutes Gesamtpaket. Ich wollte eigentlich nur mein Licht einstellen lassen, habe aber direkt einen ganzen Winter Service zu einem Super Angebot bekommen. Sehr kompetente Leute und sehr gut ausgestattete Werkstatt.",
-            "author": "Extr Digital",
-            "role": "Verifizierte Google Bewertung"
-          },
-          {
-            "quote": "Ich freue mich wie ein Schneehuhn, so eine gute Werkstatt gefunden zu haben. Das Team ist nicht nur super freundlich, sondern arbeitet korrekt, sauber und gibt zu jeder Frage kompetent Auskunft! Ich bin überaus zufrieden mit der Werkstatt und kann sie nur jedem weiter empfehlen !!!DANKE an das Werkstatt-Team !!!",
-            "author": "Ilona Japp",
-            "role": "Verifizierte Google Bewertung"
-          }
-        ]
-      },
-      "faq": {
-        "kicker": "Häufige Fragen",
-        "title": "Wichtiges zu Ihrem Werkstattbesuch",
-        "items": [
-          {
-            "question": "Bleibt meine Herstellergarantie bei einer Inspektion bei ASZ Hamburg erhalten?",
-            "answer": "Ja, absolut! Als zertifizierter KFZ-Meisterbetrieb führen wir alle Inspektionen streng nach den offiziellen Herstellervorgaben durch. Wir tragen die Wartung in Ihr digitales Serviceheft ein. Gesetzlich bleibt Ihre volle Herstellergarantie erhalten."
-          },
-          {
-            "question": "Wie funktioniert die Terminvergabe via WhatsApp?",
-            "answer": "Schicken Sie uns einfach ein Foto Ihres Fahrzeugscheins oder schreiben Sie uns Ihr Anliegen an +49 172 471 55 22. Wir senden Ihnen umgehend ein transparentes Angebot und freie Terminvorschläge."
-          },
-          {
-            "question": "Was unterscheidet Ihre 3D-Achsvermessung von herkömmlichen Messungen?",
-            "answer": "Unsere modernste 3D-Laser-Anlage erfasst Spur- und Sturzwerte hochpräzise in wenigen Sekunden. So vermeiden wir Fehler manuelle Justagen und sichern maximale Lebensdauer Ihrer Reifen."
-          },
-          {
-            "question": "Kann die Profi-Autoreinigung auch schwierige Hundegerüche oder Rauchgerüche entfernen?",
-            "answer": "Ja! Durch die Kombination aus professioneller Extraktions-Polsterreinigung und anschließender Ozon-Behandlung werden Geruchsmoleküle im Innenraum tiefenwirksam gespalten und neutralisiert."
-          },
-          {
-            "question": "Muss ich für die HU/AU Untersuchung mein Auto den ganzen Tag abgeben?",
-            "answer": "In der Regel benötigen wir das Fahrzeug für wenige Stunden. Wir prüfen vorher alle relevanten Mängelpunkte, sodass Ihr Wagen ohne Nachprüfungsgebühren die Plakette erhält."
-          },
-          {
-            "question": "Welche Zahlungsarten werden vor Ort akzeptiert?",
-            "answer": "Sie können bequem per EC-Karte, Apple Pay, Google Pay, Kreditkarte oder bar bezahlen."
-          }
-        ]
-      },
-      "contact": {
-        "kicker": "Ihre Werkstatt in Hamburg",
-        "title": "Kontakt & Anfahrt",
-        "addressTitle": "Adresse",
-        "address": "Kieler Straße 207, 22525 Hamburg-Eimsbüttel",
-        "phoneTitle": "Telefon & WhatsApp",
-        "phone": "+49 40 540 10 50",
-        "whatsapp": "+49 172 471 55 22",
-        "hoursTitle": "Öffnungszeiten",
-        "hours": "Mo – Fr: 08:00 – 18:00 Uhr | Sa: nach Vereinbarung",
-        "formTitle": "Terminanfrage senden",
-        "namePlaceholder": "Ihr Name",
-        "phonePlaceholder": "Ihre Telefonnummer",
-        "serviceSelect": "Gewünschte Leistung wählen",
-        "messagePlaceholder": "Kennzeichen / Fahrzeugmodell / Anliegen...",
-        "submitButton": "Jetzt Anfragen senden",
-        "successMessage": "Vielen Dank! Wir melden uns innerhalb von 30 Minuten bei Ihnen."
-      },
-      "footer": {
-        "rights": "© 2026 Auto Service Zentrum Hamburg. Alle Rechte vorbehalten.",
-        "meisterbrief": "Zertifizierter KFZ-Meisterbetrieb & Profi-Autoreinigung",
-        "developer": "Entwickelt von Студія Тест"
-      }
-    },
-    "en": {
-      "meta": {
-        "title": "Auto Service Zentrum Hamburg | Master Auto Repair Shop",
-        "description": "Certified Master Auto Repair Shop in Hamburg Eimsbüttel. Inspection, 3D wheel alignment, MOT prep & auto detailing from 49 €.",
-        "lang": "en"
-      },
-      "nav": {
-        "services": "Services",
-        "calculator": "Cost Calculator",
-        "meister": "Master Guarantee",
-        "detailing": "Auto Detailing",
-        "reviews": "Reviews",
-        "gallery": "Gallery",
-        "contact": "Contact",
-        "cta": "Book via WhatsApp"
-      },
-      "hero": {
-        "kicker": "Certified Master Repair Shop · Hamburg Eimsbüttel",
-        "titlePart1": "Precision Master Craftsmanship.",
-        "titlePart2": "Transparent Service for All Brands.",
-        "subtitle": "From high-precision 3D laser wheel alignment to manufacturer-compliant inspections and deep car detailing. Kieler Straße 207.",
-        "ctaPrimary": "Book via WhatsApp",
-        "ctaSecondary": "Calculate Estimate",
-        "priceTag": "Services from 49 €",
-        "badgeText": "4.8 ★ Google Rating · Master Workshop Nawabi"
-      },
-      "stats": [
-        { "number": "100%", "label": "Manufacturer Warranty Retained" },
-        { "number": "3D Laser", "label": "Latest Wheel Alignment Tech" },
-        { "number": "4.8 / 5", "label": "Google Customer Score" },
-        { "number": "Est. 2015", "label": "Years of Master Excellence" }
-      ],
-      "services": {
-        "kicker": "Master Workshop & Detailing Studio",
-        "title": "Our Core Automotive Services",
-        "subtitle": "All repairs are executed according to official manufacturer specifications — preserving full factory warranty.",
-        "categories": ["All Services", "Inspection & Maintenance", "Chassis & Brakes", "Pro Detailing"],
-        "items": [
-          {
-            "id": "inspektion",
-            "category": "Inspection & Maintenance",
-            "title": "Manufacturer-Compliant Inspection",
-            "description": "Seamless digital service logbook entry. Complete check-up of all safety-critical components.",
-            "price": "from 99 €",
-            "badge": "Warranty Safe"
-          },
-          {
-            "id": "achsvermessung",
-            "category": "Chassis & Brakes",
-            "title": "3D Laser Wheel Alignment",
-            "description": "High-precision 3D measurement of chassis geometry. Prevents uneven tire wear and secures directional stability.",
-            "price": "from 89 €",
-            "badge": "High-Tech 3D"
-          },
-          {
-            "id": "hu_au",
-            "category": "Inspection & Maintenance",
-            "title": "MOT (HU/AU) Inspection Prep",
-            "description": "Thorough pre-inspection and testing to guarantee smooth official MOT certification on site.",
-            "price": "from 145 €",
-            "badge": "TÜV Ready"
-          },
-          {
-            "id": "autoreinigung",
-            "category": "Pro Detailing",
-            "title": "Pro Detailing & Ozone Treatment",
-            "description": "Deep interior hygiene, leather restoration, and permanent odor elimination via active ozone.",
-            "price": "from 119 €",
-            "badge": "Studio Grade"
-          },
-          {
-            "id": "klimaservice",
-            "category": "Inspection & Maintenance",
-            "title": "Air Conditioning Service & Leak Check",
-            "description": "Refrigerant evacuation, leak testing, and refill for icy cold air and healthy cabin atmosphere.",
-            "price": "from 79 €",
-            "badge": "All Season"
-          },
-          {
-            "id": "bremsen",
-            "category": "Chassis & Brakes",
-            "title": "Brake System Repair & Replacement",
-            "description": "Expert replacement of brake pads, discs, and fluid using OEM quality components.",
-            "price": "from 49 €",
-            "badge": "Safety Essential"
-          },
-          {
-            "id": "smart_repair",
-            "category": "Pro Detailing",
-            "title": "Smart Repair & Dent Removal",
-            "description": "Cost-effective repair of parking dents and paint scratches without replacing expensive panels.",
-            "price": "from 89 €",
-            "badge": "Leasing Saver"
-          },
-          {
-            "id": "oil_express",
-            "category": "Inspection & Maintenance",
-            "title": "Oil-Express Service",
-            "description": "Fast oil change using certified brand lubricants, fresh filter, and eco-friendly fluid disposal.",
-            "price": "from 49 €",
-            "badge": "Express"
-          }
-        ]
-      },
-      "calculator": {
-        "kicker": "Upfront Transparency",
-        "title": "Interactive Cost Estimator",
-        "subtitle": "Select your vehicle segment and required services for an instant non-binding estimate.",
-        "selectVehicle": "1. Select Vehicle Type",
-        "vehicles": [
-          { "id": "kleinwagen", "label": "Compact / Hatchback" },
-          { "id": "limousine", "label": "Sedan / Estate" },
-          { "id": "suv", "label": "SUV / Crossover" },
-          { "id": "transporter", "label": "Van / Commercial" }
-        ],
-        "selectServices": "2. Select Services",
-        "estimateTitle": "Estimated Price:",
-        "disclaimer": "Final fixed price confirmed after brief on-site inspection. Zero hidden extra charges.",
-        "bookWhatsapp": "Send Quote Request via WhatsApp"
-      },
-      "techFeature": {
-        "kicker": "Precision Engineering",
-        "title": "Next-Generation 3D Laser Wheel Alignment",
-        "subtitle": "Even tiny chassis misalignments lead to uneven tire wear and increased fuel consumption.",
-        "points": [
-          "Digital capture of camber & toe angles in seconds",
-          "Protects expensive tires against premature inner wear",
-          "Improves driving stability and shortens wet braking distance",
-          "Recommended after curb impacts or suspension replacement"
-        ]
-      },
-      "detailingFeature": {
-        "kicker": "Professional Cleaning Studio",
-        "title": "Immaculate Interior & Odor Elimination",
-        "subtitle": "Dedicated detailing department for deep upholstery washing, leather care, and lease return prep.",
-        "points": [
-          "Medical-grade Ozone treatment: Permanently neutralizes pet and smoke odors",
-          "Deep extraction shampoo for seats and gentle leather conditioning",
-          "Lease return preparation: Avoids hefty return penalties from dealers"
-        ]
-      },
-      "trust": {
-        "kicker": "Owner-Managed Master Workshop",
-        "title": "Why Drivers in Hamburg Trust ASZ",
-        "subtitle": "Under master technician Herr Nawabi, we combine cutting-edge diagnostics with honest German engineering advice.",
-        "cards": [
-          {
-            "title": "Master Workshop",
-            "desc": "Certified expertise, continuously trained mechanics, and personal consultations."
-          },
-          {
-            "title": "100% Factory Warranty",
-            "desc": "Maintenance performed strictly according to manufacturer specifications."
-          },
-          {
-            "title": "reifen.com Partner",
-            "desc": "Official mounting partner for online tire purchases and wheel balance."
-          },
-          {
-            "title": "Fair Fixed Pricing",
-            "desc": "No surprise repairs. Every step is transparently discussed in advance."
-          }
-        ]
-      },
-      "process": {
-        "kicker": "Simple & Fast",
-        "title": "4 Steps to Your Repaired Vehicle",
-        "steps": [
-          { "num": "01", "title": "Send Request", "desc": "Quick WhatsApp message or online inquiry form." },
-          { "num": "02", "title": "Master Diagnosis", "desc": "Brief inspection on the lift and clear price quotation." },
-          { "num": "03", "title": "Expert Repair", "desc": "Using OEM parts and state-of-the-art diagnostic tools." },
-          { "num": "04", "title": "On-Time Handover", "desc": "Key handover with detailed explanation of work done." }
-        ]
-      },
-      "testimonials": {
-        "kicker": "Real Customer Reviews",
-        "title": "What Hamburg Drivers Say About Us",
-        "subtitle": "Over 250 positive Google reviews with an average 4.8 rating.",
-        "items": [
-          {
-            "quote": "Sehr kompetent, Hilfsbereit und freundlich. In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten.",
-            "author": "Olaf Schaelke",
-            "role": "Verified Google Review"
-          },
-          {
-            "quote": "Megastarke Leistung – trotz hartnäckiger Gerüche in einem Sportsitz hat sich das Team ASZ HH durchgebissen und einen tadellosen Job gemacht.",
-            "author": "Jan Sass",
-            "role": "Verified Google Review"
+            "history": "Profi-Autoreinigung Kunde",
+            "rating": 5,
+            "tag": "Spezial-Aufbereitung"
           },
           {
             "quote": "Absolut kompetentes und nettes Team! Es gibt kein Problem, was hier nicht gelöst werden kann. Super Service, klasse Beratung und absolut saubere Arbeit.",
             "author": "Katie Mueller",
-            "role": "Verified Google Review"
+            "history": "KFZ-Inspektion",
+            "rating": 5,
+            "tag": "KFZ Reparatur"
           },
           {
             "quote": "Sehr gutes Gesamtpaket. Ich wollte eigentlich nur mein Licht einstellen lassen, habe aber direkt einen ganzen Winter Service zu einem Super Angebot bekommen.",
             "author": "Extr Digital",
-            "role": "Verified Google Review"
+            "history": "Winter-Check",
+            "rating": 5,
+            "tag": "Licht & Winterservice"
           },
           {
-            "quote": "Ich freue mich wie ein Schneehuhn, so eine gute Werkstatt gefunden zu haben. Das Team ist super freundlich und arbeitet überaus korrekt!",
+            "quote": "Ich freue mich wie ein Schneehuhn, so eine gute Werkstatt gefunden zu haben. Das Team ist nicht nur super freundlich, sondern arbeitet korrekt, sauber und gibt zu jeder Frage kompetent Auskunft!",
             "author": "Ilona Japp",
-            "role": "Verified Google Review"
+            "history": "Regelmäßiger Service",
+            "rating": 5,
+            "tag": "Regelmäßiger Kundendienst"
+          }
+        ]
+      },
+      "team": {
+        "kicker": "UNSER WERKSTATT-TEAM",
+        "heading": "Geführt von staatlich geprüften KFZ-Meistern.",
+        "subheading": "Persönliche Ansprechpartner, langjährige Praxiserfahrung und kontinuierliche Weiterbildung bei Herstellern.",
+        "members": [
+          {
+            "name": "Herr Nawabi",
+            "role": "KFZ-Meister & Werkstattleitung",
+            "exp": "15+ Jahre Erfahrung",
+            "bio": "Spezialisiert auf komplexe Fahrzeugdiagnostik, Elektronik-Instandsetzung, Fahrwerkstechnik und transparente Kundenberatung an der Kieler Straße."
+          },
+          {
+            "name": "Spezialteam Profi-Autoreinigung",
+            "role": "Detailing & Smart Repair Experten",
+            "exp": "Zertifizierte Aufbereitung",
+            "bio": "Spezialisiert auf porentiefe Innenraumaufbereitung, Ozon-Desinfektion und zertifizierte Dellenentfernung ohne teure Lackierarbeiten."
           }
         ]
       },
       "faq": {
-        "kicker": "Frequently Asked Questions",
-        "title": "Everything About Your Workshop Visit",
+        "kicker": "HÄUFIG GESTELLTE FRAGEN",
+        "heading": "Antworten auf Ihre wichtigsten Fragen.",
+        "subheading": "Klarheit vor der Terminvereinbarung — ehrlich und transparent.",
         "items": [
           {
-            "question": "Is my factory warranty preserved during inspections at ASZ Hamburg?",
-            "answer": "Yes, absolutely! As a certified Master Workshop, we perform inspections strictly according to official manufacturer standards. By law, your full factory warranty stays intact."
+            "q": "Bleibt meine Herstellgarantie beim Service bei Ihnen erhalten?",
+            "a": "Ja, absolut. Als eingetragener KFZ-Meisterbetrieb führen wir alle Inspektionen streng nach den Richtlinien der Automobilhersteller durch und tragen diese ordnungsgemäß in Ihr digitales Serviceheft ein. Laut EU-Gruppenfreistellungsverordnung bleibt die Neuwagengarantie in vollem Umfang bestehen."
           },
           {
-            "question": "How does booking via WhatsApp work?",
-            "answer": "Simply take a quick photo of your vehicle registration document and text us at +49 172 471 55 22. We will respond within minutes with an estimate and available time slots."
+            "q": "Wie erhalte ich einen Kostenvoranschlag via WhatsApp?",
+            "a": "Fotografieren Sie einfach Ihren Fahrzeugschein sowie die betroffene Stelle oder beschreiben Sie das Symptom kurz. Senden Sie die Nachricht an unsere WhatsApp-Nummer (+49 176 432 109 87). Herr Nawabi prüft das Anliegen persönlich und antwortet in der Regel innerhalb kurzer Zeit."
           },
           {
-            "question": "What is the benefit of your 3D Laser wheel alignment?",
-            "answer": "Our state-of-the-art 3D laser system measures toe and camber angles down to the millimeter in seconds, preventing rapid tire wear."
+            "q": "Wie läuft die Hauptuntersuchung (HU/AU) ab?",
+            "a": "Wir unterziehen Ihr Fahrzeug vorab einer meisterhaften Sicht- und Funktionsprüfung auf unserem Prüfstand. Eventuelle Mängel beheben wir nach Rücksprache sofort, sodass der amtliche Prüfer von TÜV oder DEKRA die Plakette ohne Nachprüfgebühren direkt erteilt."
           },
           {
-            "question": "Can your interior detailing eliminate stubborn pet or smoke smells?",
-            "answer": "Yes! Through upholstery extraction and professional ozone oxidation, smell molecules are effectively broken down."
+            "q": "Bieten Sie auch Dienstleistungen zur Leasing-Rückgabe an?",
+            "a": "Ja, das ist eine unserer Spezialdisziplinen. Wir kennen die Schadenskataloge der Leasinggesellschaften exakt. Durch Smart Repair, Felgenlackierung und Profi-Autoreinigung beheben wir optische Mängel für einen Bruchteil der Kosten, die der Gutachter sonst berechnen würde."
           },
           {
-            "question": "Do I have to leave my car for the whole day for MOT (HU/AU)?",
-            "answer": "Usually just a few hours. We inspect your vehicle beforehand to ensure it passes without extra re-inspection fees."
+            "q": "Muss ich für einen Ölwechsel lange im Voraus buchen?",
+            "a": "Auf unserer Oil-Express Service-Linie bieten wir zeitnahe Termine mit minimalen Wartezeiten. Kontaktieren Sie uns kurz telefonisch oder per WhatsApp."
           },
           {
-            "question": "Which payment methods are accepted?",
-            "answer": "You can pay via Debit Card, Credit Card, Apple Pay, Google Pay, or Cash."
+            "q": "Sind Sie Partner von reifen.com?",
+            "a": "Ja, Auto Service Zentrum Hamburg ist offizieller Montagepartner von reifen.com. Sie können Ihre Reifen direkt zu uns bestellen lassen und wir übernehmen die fachgerechte Montage, Auswuchtung sowie auf Wunsch die Saison-Einlagerung."
           }
         ]
       },
-      "contact": {
-        "kicker": "Your Repair Shop in Hamburg",
-        "title": "Contact & Location",
-        "addressTitle": "Address",
-        "address": "Kieler Straße 207, 22525 Hamburg-Eimsbüttel",
-        "phoneTitle": "Phone & WhatsApp",
-        "phone": "+49 40 540 10 50",
-        "whatsapp": "+49 172 471 55 22",
-        "hoursTitle": "Opening Hours",
-        "hours": "Mon – Fri: 08:00 – 18:00 | Sat: By appointment",
-        "formTitle": "Send Appointment Request",
-        "namePlaceholder": "Your Name",
-        "phonePlaceholder": "Your Phone Number",
-        "serviceSelect": "Select Desired Service",
-        "messagePlaceholder": "License plate / car model / notes...",
-        "submitButton": "Send Request Now",
-        "successMessage": "Thank you! We will get back to you within 30 minutes."
+      "location": {
+        "kicker": "STANDORT & EINZUGSGEBIET",
+        "heading": "Zentral an der Kieler Straße in Hamburg.",
+        "subheading": "Schnell erreichbar aus Stellingen, Eimsbüttel, Altona, Bahrenfeld, Lokstedt und Eidelstedt.",
+        "address": "Kieler Straße 207, 22525 Hamburg-Stellingen",
+        "districtsTitle": "Belieferte Stadtteile & Einzugsgebiet:",
+        "districts": ["Hamburg-Stellingen", "Eimsbüttel", "Altona-Nord", "Bahrenfeld", "Lokstedt", "Eidelstedt", "Niendorf"],
+        "mapUrl": "https://www.google.com/maps?q=Kieler+Straße+207,+22525+Hamburg&output=embed"
+      },
+      "contactForm": {
+        "kicker": "DIREKTE WERKSTATT-BUCHUNG",
+        "invitationHeading": "Ihr Fahrzeug in meisterhaften Händen.",
+        "subheading": "Füllen Sie das Formular aus oder nutzen Sie die direkte WhatsApp-Kommunikation für eine sofortige Rückmeldung.",
+        "nameLabel": "Ihr vollständiger Name",
+        "phoneLabel": "Telefon / WhatsApp Nummer",
+        "licensePlateLabel": "Kennzeichen / Automarke & Modell",
+        "serviceLabel": "Gewünschte Leistung",
+        "dateLabel": "Wunschtermin",
+        "messageLabel": "Anmerkung / Beschreibung des Problems",
+        "btnSubmit": "Terminanfrage jetzt absenden",
+        "btnWhatsapp": "Direkt via WhatsApp schreiben",
+        "successMessage": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns umgehend bei Ihnen."
       },
       "footer": {
-        "rights": "© 2026 Auto Service Zentrum Hamburg. All rights reserved.",
-        "meisterbrief": "Certified Master Auto Workshop & Detailing Studio",
-        "developer": "Entwickelt von Студія Тест"
+        "aboutTitle": "Auto Service Zentrum Hamburg",
+        "aboutText": "Zertifizierter KFZ-Meisterbetrieb & Profi-Autoreinigung an der Kieler Straße 207, 22525 Hamburg. KFZ Reparatur aller Fabrikate, 3D-Achsvermessung, HU/AU und Lackservice.",
+        "linksTitle": "Schnellzugriff",
+        "hoursTitle": "Öffnungszeiten",
+        "legalTitle": "Rechtliches",
+        "impressum": "Impressum",
+        "datenschutz": "Datenschutz",
+        "agb": "AGB",
+        "rights": "Alle Rechte vorbehalten.",
+        "developerCredit": "Entwickelt von"
+      }
+    },
+    "en": {
+      "brand": {
+        "name": "Auto Service Zentrum Hamburg",
+        "tagline": "Master Auto Repair & Professional Detailing",
+        "city": "Hamburg",
+        "address": "Kieler Straße 207, 22525 Hamburg-Stellingen",
+        "phone": "+49 40 853 732 10",
+        "whatsapp": "+49 176 432 109 87",
+        "email": "info@aszhh.de",
+        "hours": "Mon - Fri: 08:00 - 18:00 | Sat: By appointment"
+      },
+      "nav": {
+        "services": "Services",
+        "calculator": "Cost Estimator",
+        "beforeAfter": "Smart Repair",
+        "advantages": "Advantages",
+        "testimonials": "Reviews",
+        "faq": "FAQ",
+        "contact": "Contact & Location",
+        "bookAppointment": "Appointment via WhatsApp"
+      },
+      "hero": {
+        "kicker": "Est. 2015 · Kieler Straße 207 · Hamburg-Stellingen",
+        "title": "Precision Service & Master Quality for All",
+        "titleAccent": "Makes.",
+        "subtitle": "100% manufacturer warranty retention. Transparent fixed pricing, master diagnostics, and instant WhatsApp video quotes without hidden fees.",
+        "ctaPrimary": "Request Appointment",
+        "ctaSecondary": "WhatsApp Direct Check",
+        "mediaType": "video",
+        "videoSrc": "https://videos.pexels.com/video-files/18101981/18101981-hd_1280_720_30fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/18101981/pexels-photo-18101981.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "badge1": "Certified Master Shop Since 2015",
+        "badge2": "Official reifen.com Partner",
+        "badge3": "4.8★ Google Review Rating",
+        "flankLeft": "Digital service log entry & full warranty protection",
+        "flankRight": "WhatsApp photo inspection under 30 minutes",
+        "sealText": "CERTIFIED AUTO REPAIR MASTER SHOP · HAMBURG STELLINGEN · "
+      },
+      "socialProof": {
+        "kicker": "CERTIFICATIONS & PARTNERS",
+        "items": [
+          "CERTIFIED MASTER CRAFT SHOP",
+          "TÜV & DEKRA INSPECTION POINT",
+          "OFFICIAL REIFEN.COM PARTNER",
+          "PROFI-AUTOREINIGUNG DETAILING UNIT",
+          "3D LASER WHEEL ALIGNMENT CENTER",
+          "4.8 GOOGLE RATING · HERR NAWABI"
+        ]
+      },
+      "advantages": {
+        "kicker": "WORKSHOP STANDARDS",
+        "heading": "Safety, Warranty Preservation & Total Price Clarity.",
+        "subheading": "At our master workshop on Kieler Straße, we service your vehicle precisely according to manufacturer specifications — zero surprises on your bill.",
+        "quote": "Transparency is our main tool: every replaced part is documented and presented to you upon request.",
+        "quoteAuthor": "Herr Nawabi — Master Technician & Director",
+        "cards": [
+          {
+            "num": "01",
+            "title": "100% Manufacturer Warranty",
+            "text": "Our official certified master shop status ensures all original vehicle warranty rights remain fully intact."
+          },
+          {
+            "num": "02",
+            "title": "WhatsApp Video Estimates",
+            "text": "Before replacing any part, you receive a clear video or photo via WhatsApp for approval. No surprise charges."
+          },
+          {
+            "num": "03",
+            "title": "Oil-Express Service",
+            "text": "Fast routine oil changes with premium oils executed on our dedicated express lane without long downtime."
+          },
+          {
+            "num": "04",
+            "title": "In-house Professional Detailing",
+            "text": "Specialized division for deep interior steam cleaning, ozone odor removal, dent repair, and paint polishing."
+          }
+        ],
+        "stats": [
+          { "value": "15+", "label": "Years Master Experience" },
+          { "value": "100%", "label": "Warranty Retained" },
+          { "value": "150+", "label": "Google Reviews" },
+          { "value": "0 €", "label": "Hidden Surcharges" }
+        ]
+      },
+      "services": {
+        "kicker": "MASTER SERVICES & PRICE LIST",
+        "heading": "Guaranteed Fixed Rates for Your Vehicle.",
+        "subheading": "From electronic diagnostics to certified TÜV inspection preparation and smart repair — all work following factory guidelines.",
+        "categories": ["All Services", "Repair & Maintenance", "Inspection & Oil", "Smart Repair & Paint", "Alignment & Tires", "Profi Detailing"],
+        "footnote": "* All indicative prices include 19% VAT. Final offer confirmed after master inspection or WhatsApp photo review.",
+        "items": [
+          {
+            "category": "Repair & Maintenance",
+            "title": "Car Repair for All Makes",
+            "price": "from €69",
+            "tag": "DIAGNOSTIC MASTERS",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/09/83406573_m.jpg",
+            "desc": "Expert repair of engine, transmission, exhaust system, and electronics according to strict factory specs."
+          },
+          {
+            "category": "Inspection & Oil",
+            "title": "Manufacturer Inspection",
+            "price": "from €129",
+            "tag": "FACTORY WARRANTY",
+            "highlight": true,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg",
+            "desc": "Thorough inspection with digital service log entry. Preserves mobility guarantee and vehicle resale value."
+          },
+          {
+            "category": "Inspektion & Öl",
+            "title": "Oil-Express Service",
+            "price": "from €49",
+            "tag": "EXPRESS LANE",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11403158_461770867325408_4504419387896843210_n-400x400.jpg",
+            "desc": "Rapid motor oil and filter change using certified brand oils for maximum engine longevity."
+          },
+          {
+            "category": "Smart Repair & Paint",
+            "title": "Smart Repair & Dent Removal",
+            "price": "from €89",
+            "tag": "SAVE UP TO 70%",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11987160_487026658133162_2622021430123409528_n-400x400.jpg",
+            "desc": "Precise repair of minor scratches, parking dents, and trim scuffs without expensive panel replacement."
+          },
+          {
+            "category": "Repair & Maintenance",
+            "title": "HU/AU Inspection Service (TÜV/DEKRA)",
+            "price": "from €145",
+            "tag": "TÜV / DEKRA",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/20637921_824980174337807_2684391906527486961_n-400x400.jpg",
+            "desc": "Comprehensive pre-check followed by official on-site inspection by certified TÜV or DEKRA examiners."
+          },
+          {
+            "category": "Alignment & Tires",
+            "title": "3D Laser Wheel Alignment",
+            "price": "from €79",
+            "tag": "HIGH-TECH LASER",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11140415_437242389778256_3874909097478851261_n-400x400.jpg",
+            "desc": "High-precision chassis calibration using state-of-the-art laser sensors. Prevents uneven tire wear."
+          },
+          {
+            "category": "Profi Detailing",
+            "title": "Professional Interior Detailing & Ozone",
+            "price": "from €99",
+            "tag": "DEEP STEAM CLEAN",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/38817514_1050441805124975_5303504051793559552_n-400x400.jpg",
+            "desc": "Deep cleaning of upholstery and leather plus scientific ozone treatment to permanently eliminate stubborn odors."
+          },
+          {
+            "category": "Smart Repair & Paint",
+            "title": "Leasing Return Refurbishment",
+            "price": "from €199",
+            "tag": "LEASE PROTECTION",
+            "highlight": false,
+            "image": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg",
+            "desc": "Targeted touch-ups matching strict return guidelines to save you from huge leasing penalty bills."
+          }
+        ]
+      },
+      "calculator": {
+        "kicker": "TRANSPARENT COST ESTIMATOR",
+        "heading": "Calculate Your Estimated Service Cost.",
+        "subheading": "Select main service and vehicle category for an instant indicative estimate.",
+        "selectService": "Select Main Service",
+        "selectVehicle": "Vehicle Class",
+        "selectAddons": "Optional Add-ons",
+        "estimatedTotal": "Estimated Fixed Price",
+        "disclaimer": "Final offer provided after master inspection or WhatsApp photo review.",
+        "btnRequest": "Confirm Estimate via WhatsApp"
+      },
+      "beforeAfter": {
+        "kicker": "SMART REPAIR EXCELLENCE",
+        "heading": "Side by Side: Before vs. After",
+        "subheading": "Rear fender dent repaired, sanded, seamlessly painted and sealed — avoiding costly panel replacement.",
+        "beforeLabel": "BEFORE: Dented Fender",
+        "afterLabel": "AFTER: Flawless Finish",
+        "beforeImg": "https://aszhh.de/wp-content/uploads/2020/07/11013421_428208404014988_354148914574248395_n.jpg",
+        "afterImg": "https://aszhh.de/wp-content/uploads/2020/07/11018083_428208434014985_2545892715827016009_n.jpg"
+      },
+      "videoShowcase": {
+        "kicker": "MODERN WORKSHOP IN ACTION",
+        "heading": "Precision Engineering on the Test Bench.",
+        "subheading": "Experience our specialized laser chassis alignment, brake testers, and diagnostic computers at Kieler Straße.",
+        "videoSrc": "https://videos.pexels.com/video-files/6442794/6442794-hd_1280_720_24fps.mp4",
+        "videoPoster": "https://images.pexels.com/videos/6442794/pexels-photo-6442794.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "stat1": "100%",
+        "stat1Label": "Diagnostic Accuracy",
+        "stat2": "10+",
+        "stat2Label": "Years Master Experience",
+        "stat3": "0 €",
+        "stat3Label": "Surprise Add-on Fees"
+      },
+      "process": {
+        "kicker": "CLEAR WORKFLOW",
+        "heading": "4 Simple Steps to Your Serviced Vehicle.",
+        "subheading": "No bureaucratic friction — straightforward automotive care at Auto Service Zentrum Hamburg.",
+        "steps": [
+          {
+            "num": "01",
+            "title": "Inquiry & Initial Check",
+            "time": "Approx. 10 mins",
+            "text": "Send us your request via WhatsApp photo or form. We inspect the symptoms immediately."
+          },
+          {
+            "num": "02",
+            "title": "Master Estimate",
+            "time": "Under 30 mins",
+            "text": "Herr Nawabi or a master technician prepares a clear fixed-price quote with OEM or certified quality parts."
+          },
+          {
+            "num": "03",
+            "title": "Expert Repair",
+            "time": "On schedule",
+            "text": "Precise execution on modern lifts according to strict factory guidelines."
+          },
+          {
+            "num": "04",
+            "title": "Handover & Service Log",
+            "time": "Upon pickup",
+            "text": "Personal explanation of all completed work, service log update, and vehicle handover without delay."
+          }
+        ]
+      },
+      "testimonials": {
+        "kicker": "VERIFIED REVIEWS",
+        "heading": "What Hamburg Drivers Say About Us.",
+        "subheading": "4.8 rating with over 150 verified reviews on Google My Business.",
+        "featuredQuote": "Very competent, helpful and friendly. Customer service is still top priority here. I was advised exceptionally well by Herr Nawabi.",
+        "featuredAuthor": "Olaf Schaelke",
+        "featuredDescriptor": "Regular customer from Hamburg-Stellingen since 2019",
+        "items": [
+          {
+            "quote": "Sehr kompetent, Hilfsbereit und freundlich. In diesem Unternehmen wird Kundenservice noch groß geschrieben. Ich wurde von Herrn Nawabi sehr gut beraten. Gerne wieder, bis zum nächsten mal.",
+            "author": "Olaf Schaelke",
+            "history": "Customer since 2019",
+            "rating": 5,
+            "tag": "Verified Regular Customer"
+          },
+          {
+            "quote": "Megastarke Leistung – trotz hartnäckiger Gerüche in einem Sportsitz hat sich das Team ASZ HH durchgebissen und einen tadellosen Job gemacht. Geruch weg, optisch perfekt, mehr kann man nicht wollen.",
+            "author": "Jan Sass",
+            "history": "Detailing Client",
+            "rating": 5,
+            "tag": "Special Detailing"
+          },
+          {
+            "quote": "Absolut kompetentes und nettes Team! Es gibt kein Problem, was hier nicht gelöst werden kann. Super Service, klasse Beratung und absolut saubere Arbeit.",
+            "author": "Katie Mueller",
+            "history": "Inspection Client",
+            "rating": 5,
+            "tag": "Auto Repair"
+          },
+          {
+            "quote": "Sehr gutes Gesamtpaket. Ich wollte eigentlich nur mein Licht einstellen lassen, habe aber direkt einen ganzen Winter Service zu einem Super Angebot bekommen.",
+            "author": "Extr Digital",
+            "history": "Winter Check",
+            "rating": 5,
+            "tag": "Winter Service"
+          },
+          {
+            "quote": "Ich freue mich wie ein Schneehuhn, so eine gute Werkstatt gefunden zu haben. Das Team ist nicht nur super freundlich, sondern arbeitet korrekt, sauber und gibt zu jeder Frage kompetent Auskunft!",
+            "author": "Ilona Japp",
+            "history": "Regular Service",
+            "rating": 5,
+            "tag": "Regular Service"
+          }
+        ]
+      },
+      "team": {
+        "kicker": "OUR WORKSHOP TEAM",
+        "heading": "Led by Certified Master Technicians.",
+        "subheading": "Direct personal consultation, decades of practical expertise, and certified manufacturer training.",
+        "members": [
+          {
+            "name": "Herr Nawabi",
+            "role": "Certified Master Technician & Shop Director",
+            "exp": "15+ Years Experience",
+            "bio": "Specialized in complex vehicle diagnostics, electronic repairs, chassis calibration, and client consultation at Kieler Straße."
+          },
+          {
+            "name": "Profi-Autoreinigung Team",
+            "role": "Detailing & Smart Repair Specialists",
+            "exp": "Certified Refurbishment",
+            "bio": "Specialized in deep steam interior restoration, scientific ozone odor neutralization, and paintless dent removal."
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "FREQUENTLY ASKED QUESTIONS",
+        "heading": "Answers to Your Key Questions.",
+        "subheading": "Clear information before booking — honest and transparent.",
+        "items": [
+          {
+            "q": "Does my manufacturer warranty stay valid?",
+            "a": "Yes, 100%. As a certified master workshop (KFZ-Meisterbetrieb), we perform all servicing strictly according to automobile manufacturer regulations and update your digital service log."
+          },
+          {
+            "q": "How do I get a WhatsApp video estimate?",
+            "a": "Simply send a photo of your vehicle registration document and the affected area to our WhatsApp number (+49 176 432 109 87). Herr Nawabi reviews it personally."
+          },
+          {
+            "q": "How does the HU/AU inspection work?",
+            "a": "We run a thorough pre-check on our test stands. Any minor defects are fixed upon approval, ensuring certified TÜV or DEKRA inspectors award the sticker without re-inspection fees."
+          },
+          {
+            "q": "Do you offer leasing return refurbishment?",
+            "a": "Yes! We specialize in Smart Repair and detailing that fixes minor body and rim flaws for a fraction of leasing penalty fees."
+          },
+          {
+            "q": "Are you an official reifen.com partner?",
+            "a": "Yes, Auto Service Zentrum Hamburg is an official mounting partner for reifen.com. Order your tires directly to our shop for mounting and storage."
+          }
+        ]
+      },
+      "location": {
+        "kicker": "LOCATION & SERVICE AREA",
+        "heading": "Centrally Located on Kieler Straße in Hamburg.",
+        "subheading": "Fast access from Stellingen, Eimsbüttel, Altona, Bahrenfeld, Lokstedt, and Eidelstedt.",
+        "address": "Kieler Straße 207, 22525 Hamburg-Stellingen",
+        "districtsTitle": "Primary Districts Served:",
+        "districts": ["Hamburg-Stellingen", "Eimsbüttel", "Altona-Nord", "Bahrenfeld", "Lokstedt", "Eidelstedt", "Niendorf"],
+        "mapUrl": "https://www.google.com/maps?q=Kieler+Straße+207,+22525+Hamburg&output=embed"
+      },
+      "contactForm": {
+        "kicker": "DIRECT WORKSHOP BOOKING",
+        "invitationHeading": "Your Vehicle in Masterful Hands.",
+        "subheading": "Fill in the form or send us a WhatsApp message for immediate feedback.",
+        "nameLabel": "Full Name",
+        "phoneLabel": "Phone / WhatsApp Number",
+        "licensePlateLabel": "License Plate / Make & Model",
+        "serviceLabel": "Requested Service",
+        "dateLabel": "Preferred Date",
+        "messageLabel": "Problem Description / Notes",
+        "btnSubmit": "Submit Appointment Request",
+        "btnWhatsapp": "Chat directly on WhatsApp",
+        "successMessage": "Thank you! Your request has been sent successfully. We will get back to you shortly."
+      },
+      "footer": {
+        "aboutTitle": "Auto Service Zentrum Hamburg",
+        "aboutText": "Certified KFZ-Meisterbetrieb & Profi-Autoreinigung at Kieler Straße 207, 22525 Hamburg. Full repair for all vehicle makes, 3D laser alignment, HU/AU, and detailing.",
+        "linksTitle": "Quick Links",
+        "hoursTitle": "Opening Hours",
+        "legalTitle": "Legal",
+        "impressum": "Imprint",
+        "datenschutz": "Privacy Policy",
+        "agb": "Terms",
+        "rights": "All rights reserved.",
+        "developerCredit": "Developed by"
       }
     }
   }
